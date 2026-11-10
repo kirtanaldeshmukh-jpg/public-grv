@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#00201d", "primary-fixed": "#e2dfff", "on-primary-container": "#a9a7ff", "background": "#f7f9fb", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#eceef0", "inverse-surface": "#2d3133", "surface-bright": "#f7f9fb", "surface-dim": "#d8dadc", "primary-fixed-dim": "#c3c0ff", "tertiary": "#3a0085", "primary": "#1f108e", "surface-tint": "#544fc0", "outline": "#777584", "on-tertiary-fixed-variant": "#5a00c6", "on-background": "#191c1e", "surface-container-highest": "#e0e3e5", "tertiary-container": "#5500bc", "tertiary-fixed": "#eaddff", "surface-container-lowest": "#ffffff", "surface-variant": "#e0e3e5", "on-tertiary-container": "#bf9fff", "tertiary-fixed-dim": "#d2bbff", "surface-container-high": "#e6e8ea", "on-error-container": "#93000a", "on-secondary-container": "#006f66", "secondary-fixed": "#89f5e7", "surface": "#f7f9fb", "on-primary-fixed-variant": "#3b35a7", "surface-container-low": "#f2f4f6", "on-primary": "#ffffff", "on-error": "#ffffff", "inverse-primary": "#c3c0ff", "secondary-fixed-dim": "#6bd8cb", "secondary-container": "#86f2e4", "on-tertiary-fixed": "#25005a", "secondary": "#006a61", "on-surface-variant": "#464553", "on-surface": "#191c1e", "error-container": "#ffdad6", "on-primary-fixed": "#0f0069", "on-secondary-fixed-variant": "#005049", "inverse-on-surface": "#eff1f3", "outline-variant": "#c8c4d5", "error": "#ba1a1a", "primary-container": "#3730a3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2rem", "margin": "2rem", "space-md": "1rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "title-lg": ["Inter"], "label-sm": ["Inter"], "title-md": ["Inter"], "headline-xl": ["Inter"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-8"><div class="flex items-center gap-3"><img alt="ResolveTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xi-OnxUANYIV9Z1K-uS1GPpWOFtkkGi-hhH6BLWfy_JTjoeLDnoZGy9ArD5k-GeRQcxc7yWlDlHf2iPo5TwqAnVNV1U6UEK2Jr3tIupGbc-sXGBH9nkXHJy8ikIIFAj-uJ5xECl6-xXDgP1yUAffWeq9cbjcp27X4mSZfssRY2hB7pSmKdY6GYkXkiW1-xl_1TKJB4GGYSzCkUzmSvttGlkdO7ICLSG_jo_I5P5ISz2Q"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight">ResolveTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Citizen Public Portal</span></div></div><nav class="hidden lg:flex items-center gap-6" data-active-classes="text-primary font-title-sm underline decoration-2 underline-offset-8"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="file-complaint" href="#">File Complaint</a><a aria-current="page" class="transition-colors text-primary font-title-sm underline decoration-2 underline-offset-8" data-path="track-grievance" href="#">Track Grievance</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="citizen-charter" href="#">Citizen Charter</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="faq-and-helpline" href="#">FAQ & Helpline</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 bg-secondary-container text-on-secondary-container px-3 py-1.5 rounded-lg"><span class="material-symbols-outlined text-[18px]">support_agent</span><span class="font-label-md text-label-md font-semibold">Toll-Free 1902</span></div><div class="bg-surface-container p-1 rounded-lg flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" type="button">English</button><button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">ಕನ್ನಡ</button></div><a class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-colors flex items-center gap-1.5" data-path="citizen-login" href="#"><span>Sign In / Register</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQctWSVR_NfhxSinxny_kEMx8rUA6qaPnrvqCdyZh7pRlPmjCi3nWUrSpGsMlFOy-7QmTqBOkVPDzR-cpVw8WPBUHuC-N0-tWBimG6JpWIiizJUzSN5IkDoGuHGga0fg1uA87jhpNHiW_comCrnHffGKpqVIHBXR0r5DDeCDTQFbH3gW_DSK7nGC_QHlr0Z8sr_TfNMNvRGDwIknl13tVoF_hC912fH9D46M2uILlu"/></div></div></header><main class="w-full pt-16 bg-background px-space-lg min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Interactive Bar / Tracking Control Header -->
+<section class="w-full mb-8 pt-4">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4 bg-surface-container-lowest p-6 rounded-xl shadow-sm">
+<div class="flex flex-col lg:flex-row items-start lg:items-center gap-4 flex-1">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Karnataka IPGRMS • SAKALA Act Track</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Live Case Dossier</span>
+</div>
+<div class="relative w-full max-w-md">
+<div class="flex items-center bg-surface-container-low rounded-lg px-3 py-1.5 focus-within:bg-surface-container-lowest transition-colors shadow-inner">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent border-0 outline-none text-on-surface font-title-sm text-title-sm placeholder-outline" id="grievanceSearchInput" placeholder="Grievance ID / ಮೊಬೈಲ್ ಸಂಖ್ಯೆ" type="text" value="KA-2025-88219"/>
+<button class="ml-2 px-3 py-1 bg-primary text-on-primary font-label-md text-label-md rounded hover:bg-primary-container transition-all flex items-center gap-1 shadow-sm" id="searchBtn" type="button">
+<span>Track</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<span class="text-[10px] text-outline font-label-sm mt-1 block">Switch to OTP mobile tracking via portal account</span>
+</div>
+</div>
+<!-- Quick Action Utilities -->
+<div class="flex flex-wrap items-center gap-3">
+<button class="flex items-center gap-2 px-3.5 py-2 bg-surface-container text-on-surface font-label-lg text-label-lg rounded-lg hover:bg-surface-container-high transition-colors shadow-sm" id="btnAckDownload" title="Download SAKALA Digital Signed Receipt" type="button">
+<span class="material-symbols-outlined text-primary text-[20px]">download</span>
+<span>Receipt PDF</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 bg-secondary text-on-secondary font-label-lg text-label-lg rounded-lg hover:bg-on-secondary-container transition-colors shadow-sm" id="btnShareWhatsapp" type="button">
+<span class="material-symbols-outlined text-[20px]">share</span>
+<span>WhatsApp Share</span>
+</button>
+<div class="hidden md:flex items-center pl-2">
+<div class="flex items-center gap-1.5 bg-secondary-container/40 text-on-secondary-container px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-tight">SAKALA Guaranteed SLA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Grievance Header Summary Card -->
+<section class="w-full mb-8">
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm relative overflow-hidden">
+<!-- Left color spine indicator based on priority/health -->
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-primary"></div>
+<div class="flex flex-col lg:flex-row lg:items-start justify-between gap-6">
+<div class="flex-1 space-y-3">
+<div class="flex flex-wrap items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-bold tracking-wider">
+              BWSSB • Div IV Yelahanka
+            </span>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tag</span>
+<span>KA-2025-88219</span>
+</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-outline">schedule</span>
+              Filed: 12 Oct 2025, 09:30 AM
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight leading-snug">
+            Drinking Water Pipeline Burst & Contamination on 8th Main Road, Vidyaranyapura, Bengaluru
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            ಕುಡಿಯುವ ನೀರಿನ ಪೈಪ್‌ಲೈನ್ ಒಡೆದು ರಸ್ತೆಯಲ್ಲಿ ನೀರು ಸೋರಿಕೆ ಹಾಗೂ ಕಲುಷಿತ ನೀರು ಪೂರೈಕೆ ದೂರು.
+          </p>
+</div>
+<!-- Status & SLA Badge Metric Cluster -->
+<div class="flex flex-row lg:flex-col items-end justify-between lg:justify-start gap-3 min-w-[260px]">
+<div class="flex items-center gap-2">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+</span>
+<div class="px-3.5 py-1.5 rounded-full bg-primary-fixed text-primary font-label-md text-label-md font-bold tracking-wide">
+              In Progress / ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿದೆ
+            </div>
+</div>
+<!-- Grievance Health Score Container -->
+<div class="bg-surface-container-low p-3.5 rounded-lg w-full flex items-center justify-between shadow-inner">
+<div class="flex items-center gap-2.5">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-secondary font-title-sm text-title-sm">
+                84
+              </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Health Score (Good)</span>
+<span class="font-body-sm text-body-sm text-secondary line-clamp-1">Active Crew Deployed</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[22px]">health_and_safety</span>
+</div>
+</div>
+</div>
+<!-- SAKALA SLA Banner Ribbon -->
+<div class="mt-6 pt-4 bg-surface-container-high/60 -mx-6 -mb-6 lg:-mx-8 lg:-mb-8 px-6 lg:px-8 py-3.5 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[22px]">hourglass_top</span>
+<div class="flex flex-wrap items-baseline gap-2">
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Guaranteed SAKALA SLA Delivery Date:</span>
+<span class="font-title-sm text-title-sm text-primary">14 Oct 2025, 05:00 PM</span>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-1 rounded-full shadow-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+<span class="font-label-sm text-label-sm font-bold">18 Hours 15 Mins Remaining</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Dual Layout: Left Escalation Journey & Dossier / Right Officer & Safety Net -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column (Span 7 or 8) -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Milestone Timeline Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm">
+<div class="flex items-center justify-between mb-8">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">SAKALA Statutory Audit</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Resolution Milestone Tracker</h2>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+            5 Stages Architecture
+          </span>
+</div>
+<!-- Vertical Milestone Stepper -->
+<div class="relative pl-6 space-y-8 before:absolute before:left-3 before:top-2 before:bottom-3 before:w-0.5 before:bg-surface-container-highest">
+<!-- Step 1: Lodged -->
+<div class="relative flex items-start gap-4">
+<div class="absolute -left-6 mt-0.5 w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-4 rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface">1. Grievance Lodged & Registered</span>
+<span class="font-label-sm text-label-sm text-outline">12 Oct 2025, 09:30 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Registered via IPGRMS Public Mobile App with GPS Tagged coordinates (13.0827° N, 77.5458° E). SAKALA Token generated automatically.
+              </p>
+<div class="mt-2 text-[12px] text-secondary font-medium">Digital Signature ID: KAR-SVR-098827-REC</div>
+</div>
+</div>
+<!-- Step 2: Verified & Assigned -->
+<div class="relative flex items-start gap-4">
+<div class="absolute -left-6 mt-0.5 w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px]">check</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-4 rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface">2. Verified & Routed to Jurisdiction Officer</span>
+<span class="font-label-sm text-label-sm text-outline">12 Oct 2025, 11:15 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Assigned to Assistant Executive Engineer (AEE) Sri R. Manjunath, Maintenance Div 4, Yelahanka Sub-Division.
+              </p>
+<div class="mt-2 inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-container-lowest rounded text-primary text-[12px] font-medium">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+                Jurisdiction Officer Accepted Case within 105 mins SLA
+              </div>
+</div>
+</div>
+<!-- Step 3: Current Active Stage -->
+<div class="relative flex items-start gap-4">
+<div class="absolute -left-6 mt-0.5 w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center ring-4 ring-primary-fixed shadow-md animate-pulse">
+<span class="material-symbols-outlined text-[16px]">engineering</span>
+</div>
+<div class="flex-1 bg-primary-fixed/20 p-5 rounded-xl shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary font-bold">3. Field Inspection & Heavy Material Dispatch</span>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary text-[11px] font-bold">Active Now</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">13 Oct 2025, 08:45 AM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+                Site excavation team with JCB unit dispatched from Sahakar Nagar depot. Replacement 160mm ductile iron sleeve pipe en route. Sluice valve isolated on 7th Cross junction to prevent further road flooding.
+              </p>
+<div class="mt-4 flex flex-wrap items-center gap-3">
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-lg text-primary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px]">group</span>
+                  Crew: 6 Technicians + 1 Junior Engineer on site
+                </div>
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-lg text-secondary font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+                  Job Card #JC-BWSSB-2025-441
+                </div>
+</div>
+</div>
+</div>
+<!-- Step 4: Pending -->
+<div class="relative flex items-start gap-4 opacity-70">
+<div class="absolute -left-6 mt-0.5 w-6 h-6 rounded-full bg-surface-container-highest text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">science</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-4 rounded-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface">4. Pipeline Welding, Flush & Water Quality Testing</span>
+<span class="font-label-sm text-label-sm text-outline">Expected: 13 Oct 2025, 04:00 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Post-repair chlorine test and turbidity check to guarantee potability before resuming residential tap supply.
+              </p>
+</div>
+</div>
+<!-- Step 5: Pending Citizen Sign-off -->
+<div class="relative flex items-start gap-4 opacity-70">
+<div class="absolute -left-6 mt-0.5 w-6 h-6 rounded-full bg-surface-container-highest text-outline flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">how_to_reg</span>
+</div>
+<div class="flex-1 bg-surface-container-low p-4 rounded-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+<span class="font-title-sm text-title-sm text-on-surface">5. Citizen Final Verification & SAKALA Sign-off</span>
+<span class="font-label-sm text-label-sm text-outline">Expected: 14 Oct 2025, 05:00 PM</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                The complainant must provide confirmation via OTP verification or survey to formally close the docket in state monitoring servers.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Public Transparency & Community Proof Photo Dossier -->
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Verification Proofs</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">On-Ground Media & Transparency Evidence</h2>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+            Geo-Verified Photos
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Citizen Incident Photo -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="relative h-48 w-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Photographic evidence of broken municipal water pipe bursting on urban paved road in Bengaluru with pressurized clean drinking water flooding asphalt, shot during morning daylight with geo watermark and high clarity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh0dSa_-T07gr__v9p0IVIl-FIfwko40vfauDUEdvzL7742dUBp3omJFj9dhEll_i6sZtWcV-N-p-PmTiFr1vz2_7L2SXTitaPlXECg5CSv6fwo-nPSE4QF-7ky5ONSOnCtJoyZsM6CPhK61C9N28nVVgaiJlg45C--2ScFeWKwbAJNKXmUHiqE5iOmFHd9eIzh9ippQEtGyJG5g04byxOFYkTi1pAxgl-prZHLfcq"/>
+<span class="absolute top-3 left-3 bg-inverse-surface/80 text-inverse-on-surface px-2.5 py-1 rounded text-[11px] font-semibold tracking-wide">
+                Original Complaint Photo (Citizen)
+              </span>
+<span class="absolute bottom-3 right-3 bg-inverse-surface/80 text-inverse-on-surface px-2 py-0.5 rounded text-[11px]">
+                12 Oct 2025, 09:28 AM
+              </span>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-on-surface">Citizen Initial Upload</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Location: 8th Main, Vidyaranyapura. High pressure freshwater leak causing road sub-base erosion.
+              </p>
+</div>
+</div>
+<!-- Official Crew Job Card Photo -->
+<div class="flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-sm">
+<div class="relative h-48 w-full bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Municipal government repair crew in safety helmets and high-visibility neon vests with an excavator digger machine excavating a trench beside a residential street in Bangalore India with an official clipboard inspection job sheet visible." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhsf12drZlYoSj3jxnY5EnAJhM9YO-cgcrI2pxlWoBxXFj0p2htmJ-4IkPwVJ3jtr2PXoPm6YL-29SsJWrxhrZoS_lJ5lyJyiYRLnp2p3tcSwbc6lGIOrAbIVLt4-RtLI0MCJ8fU8PIM8XhPha7xs15vBF2NG5i59JqNbamJeHn-W4ni5s_wEPXrxa4LCzFTHm7n_Nu8ltjuUw4CM8MsjyFpbXxrtrtrOV_a9MxEed"/>
+<span class="absolute top-3 left-3 bg-primary text-on-primary px-2.5 py-1 rounded text-[11px] font-semibold tracking-wide">
+                Live Job Card Evidence (BWSSB Crew)
+              </span>
+<span class="absolute bottom-3 right-3 bg-inverse-surface/80 text-inverse-on-surface px-2 py-0.5 rounded text-[11px]">
+                13 Oct 2025, 09:10 AM
+              </span>
+</div>
+<div class="p-4 flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-on-surface">Official Repair Work Commenced</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Uploaded by Junior Engineer K. Nagesh. Safety trench barriers installed, road diversion marked.
+              </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Post-Resolution Satisfaction Rating Preview -->
+<div class="bg-surface-container-lowest rounded-xl p-6 lg:p-8 shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
+<div>
+<h3 class="font-title-lg text-title-lg text-on-surface font-bold">Post-Resolution Audit & Citizen Rating Preview</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Once marked completed, you will be invited to rate the service quality under the Public Charter.
+            </p>
+</div>
+<span class="px-2.5 py-1 bg-surface-container rounded font-label-sm text-label-sm text-outline self-start sm:self-auto">
+            Unlocks on Stage 5
+          </span>
+</div>
+<div class="bg-surface-container-low p-6 rounded-xl flex flex-col md:flex-row items-center justify-between gap-6 opacity-75">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">How would you rate the redressal velocity & quality?</span>
+<div class="flex items-center gap-1.5" id="starRatingContainer">
+<button class="text-surface-container-highest hover:text-amber-500 transition-colors p-1" title="1 Star - Poor" type="button">
+<span class="material-symbols-outlined text-[32px]">star</span>
+</button>
+<button class="text-surface-container-highest hover:text-amber-500 transition-colors p-1" title="2 Stars - Fair" type="button">
+<span class="material-symbols-outlined text-[32px]">star</span>
+</button>
+<button class="text-surface-container-highest hover:text-amber-500 transition-colors p-1" title="3 Stars - Satisfactory" type="button">
+<span class="material-symbols-outlined text-[32px]">star</span>
+</button>
+<button class="text-surface-container-highest hover:text-amber-500 transition-colors p-1" title="4 Stars - Very Good" type="button">
+<span class="material-symbols-outlined text-[32px]">star</span>
+</button>
+<button class="text-surface-container-highest hover:text-amber-500 transition-colors p-1" title="5 Stars - Outstanding" type="button">
+<span class="material-symbols-outlined text-[32px]">star</span>
+</button>
+</div>
+</div>
+<div class="w-full md:w-auto">
+<textarea class="w-full md:w-72 h-16 p-2.5 bg-surface-container text-outline text-[12px] rounded-lg border-0 resize-none outline-none cursor-not-allowed" disabled="" placeholder="Citizen feedback comments will unlock when field crew submits the completion report..."></textarea>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (Span 4 or 5): Officers, Safety Net & Escalation Timer -->
+<div class="lg:col-span-4 flex flex-col gap-8">
+<!-- Citizen Escalation Safety Net Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm relative overflow-hidden">
+<div class="absolute right-0 top-0 w-32 h-32 bg-primary/5 rounded-bl-full pointer-events-none"></div>
+<div class="flex items-center gap-2 mb-4">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">security</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface font-bold">SAKALA Safety Net</span>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl mb-5 space-y-2">
+<div class="flex items-center justify-between text-on-surface">
+<span class="font-label-sm text-label-sm text-outline">Automatic Escalation Trigger</span>
+<span class="font-label-sm text-label-sm font-bold text-primary">In 18h 15m</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 58%;"></div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1 leading-snug">
+            If not resolved by <strong class="text-on-surface">14 Oct, 05:00 PM</strong>, this complaint automatically escalates to <strong>Level 2: Chief Engineer BWSSB Cauvery Division</strong> with statutory notice.
+          </p>
+</div>
+<div class="space-y-3">
+<button class="w-full py-2.5 px-4 bg-primary text-on-primary font-label-lg text-label-lg rounded-lg hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm" id="btnSendReminder" type="button">
+<span class="material-symbols-outlined text-[18px]">notification_important</span>
+<span>Send Polite Reminder to Crew</span>
+</button>
+<button class="w-full py-2.5 px-4 bg-surface-container text-error font-label-lg text-label-lg rounded-lg hover:bg-error-container hover:text-on-error-container transition-all flex items-center justify-center gap-2 shadow-sm" id="btnRaiseFlag" type="button">
+<span class="material-symbols-outlined text-[18px]">flag</span>
+<span>Raise Early Flag (Worsening Leak)</span>
+</button>
+</div>
+<p class="text-[11px] text-outline text-center mt-3">
+          Complies with Section 4(1) of Karnataka Sakala Services Act, 2011.
+        </p>
+</div>
+<!-- Assigned Redressal Official Profile Card -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<div class="flex items-center justify-between mb-5">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Accountability Dossier</span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+            On Duty
+          </span>
+</div>
+<div class="flex items-start gap-4 mb-6">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm bg-surface-container-high" data-alt="Professional headshot portrait of a South Asian civil engineer government official in formal attire with spectacles and respectful expression against official institutional background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdP0z7613nLtz1P9qDtgfRyf2XB5ZMeyoBY2aAmu-VBMjZthxfi6L9H9gHA-tBarPrRLgly9wV0N7zjeOxr5kss-6Eit4raMN65OaZ6igTffMlH2ovmKk2kRbcLpkeF4gUkPBn7BF53mQ-Ra46cfrhzdDYhFRV71httLdFVHL6WQ3z9rPXZyES0Bydtue2CxH8T8vTwUP6qxiAnOmwBS28Cip9DfUoFJKjc0ZyO9UX"/>
+<div class="flex flex-col min-w-0">
+<h3 class="font-title-md text-title-md text-on-surface truncate">Sri R. Manjunath</h3>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Assistant Executive Engineer</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Div IV, Yelahanka Sub-Division</span>
+<span class="text-[11px] text-outline mt-0.5">Emp ID: KAR-BWSSB-8831</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl space-y-3 mb-5">
+<div class="flex items-center gap-3 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">call</span>
+<span class="font-medium">+91 80 2294 5144 (Direct Desk)</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">mail</span>
+<span class="truncate font-medium">aee.div4.yel@bwssb.karnataka.gov.in</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">location_on</span>
+<span class="line-clamp-1 font-medium">Sahakar Nagar BWSSB Service Station, Bengaluru</span>
+</div>
+</div>
+<button class="w-full py-2.5 px-4 bg-secondary text-on-secondary font-label-lg text-label-lg rounded-lg hover:bg-on-secondary-container transition-all flex items-center justify-center gap-2 shadow-sm" id="btnRequestCallback" type="button">
+<span class="material-symbols-outlined text-[18px]">phone_callback</span>
+<span>Request Officer Callback</span>
+</button>
+</div>
+<!-- Institutional Oversight & Escalation Ladder -->
+<div class="bg-surface-container-lowest rounded-xl p-6 shadow-sm">
+<h4 class="font-title-md text-title-md text-on-surface mb-3 font-semibold">Hierarchy Escalation Chain</h4>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-secondary flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">
+              L1
+            </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Assistant Executive Engineer (Current)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resolution window: 48 Hours</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">
+              L2
+            </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Chief Engineer (Cauvery Division)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automatic escalation upon SLA expiry</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest text-outline flex items-center justify-center font-bold text-[12px] shrink-0 mt-0.5">
+              L3
+            </div>
+<div>
+<span class="font-title-sm text-title-sm text-on-surface block">Principal Secretary, Urban Dev Dept</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cabinet Redressal Cell & Audit Panel</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Help & SAKALA Citizen Helpline -->
+<div class="bg-surface-container-low rounded-xl p-5 flex items-center justify-between shadow-inner">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined text-[20px]">headset_mic</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase font-bold">24x7 Citizen Call Desk</span>
+<span class="font-title-sm text-title-sm text-on-surface block font-bold">Dial 080-22279954 / 1902</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline" href="#">Help FAQ</a>
+</div>
+</div>
+</div>
+<!-- Notification Toast Modal (Hidden by default, triggered by micro-interactions) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-3 bg-inverse-surface text-inverse-on-surface px-5 py-3.5 rounded-xl shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed" id="toastIcon">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">Action confirmed successfully.</span>
+</div>
+</div>
+<script>
+  (function initGrievanceTracker() {
+    function showToast(message, icon = 'check_circle') {
+      const toast = document.getElementById('toastNotification');
+      const msgElem = document.getElementById('toastMessage');
+      const iconElem = document.getElementById('toastIcon');
+      if (!toast || !msgElem) return;
+
+      msgElem.textContent = message;
+      if (iconElem) iconElem.textContent = icon;
+
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+      }, 3500);
+    }
+
+    const btnAckDownload = document.getElementById('btnAckDownload');
+    if (btnAckDownload) {
+      btnAckDownload.addEventListener('click', () => {
+        showToast('Official SAKALA Receipt PDF (KA-2025-88219) generated for download.', 'file_download');
+      });
+    }
+
+    const btnShareWhatsapp = document.getElementById('btnShareWhatsapp');
+    if (btnShareWhatsapp) {
+      btnShareWhatsapp.addEventListener('click', () => {
+        showToast('Tracking summary link copied for WhatsApp sharing.', 'share');
+      });
+    }
+
+    const btnSendReminder = document.getElementById('btnSendReminder');
+    if (btnSendReminder) {
+      btnSendReminder.addEventListener('click', () => {
+        showToast('Polite notification logged to AEE Sri R. Manjunath’s mobile terminal.', 'notifications_active');
+      });
+    }
+
+    const btnRaiseFlag = document.getElementById('btnRaiseFlag');
+    if (btnRaiseFlag) {
+      btnRaiseFlag.addEventListener('click', () => {
+        showToast('Urgent priority tag attached. Maintenance dispatch supervisory notice sent.', 'flag');
+      });
+    }
+
+    const btnRequestCallback = document.getElementById('btnRequestCallback');
+    if (btnRequestCallback) {
+      btnRequestCallback.addEventListener('click', () => {
+        showToast('Callback registered. Field Officer will connect within 90 minutes.', 'phone_callback');
+      });
+    }
+
+    const searchBtn = document.getElementById('searchBtn');
+    const searchInput = document.getElementById('grievanceSearchInput');
+    if (searchBtn && searchInput) {
+      searchBtn.addEventListener('click', () => {
+        const val = searchInput.value.trim();
+        if (val) {
+          showToast(`Retrieved live records for docket: ${val}`, 'search');
+        } else {
+          showToast('Please enter a valid Grievance ID or mobile number.', 'warning');
+        }
+      });
+    }
+
+    // Star preview micro-interaction
+    const starContainer = document.getElementById('starRatingContainer');
+    if (starContainer) {
+      const stars = starContainer.querySelectorAll('button');
+      stars.forEach((star, index) => {
+        star.addEventListener('click', () => {
+          showToast(`Rating of ${index + 1} stars will be submitted once work is verified.`, 'star');
+        });
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-10 mt-12 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full px-space-lg flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><span class="font-title-sm text-title-sm text-on-surface">Centre for e-Governance, Government of Karnataka</span><span class="font-body-sm text-body-sm text-on-surface-variant">Integrated Public Grievance Redressal and Monitoring System (IPGRMS)</span></div><div class="flex items-center gap-6 text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Use</a><a class="hover:text-on-surface transition-colors" href="#">SLA Guidelines</a><a class="hover:text-on-surface transition-colors" href="#">Helpdesk</a></div><div class="text-on-surface-variant font-label-sm text-label-sm">© 2025 ResolveTrack Karnataka. All Rights Reserved.</div></div></footer></body></html>

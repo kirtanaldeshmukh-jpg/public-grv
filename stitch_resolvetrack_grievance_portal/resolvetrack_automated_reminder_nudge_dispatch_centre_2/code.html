@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#00201d", "primary-fixed": "#e2dfff", "on-primary-container": "#a9a7ff", "background": "#f7f9fb", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#eceef0", "inverse-surface": "#2d3133", "surface-bright": "#f7f9fb", "surface-dim": "#d8dadc", "primary-fixed-dim": "#c3c0ff", "tertiary": "#3a0085", "primary": "#1f108e", "surface-tint": "#544fc0", "outline": "#777584", "on-tertiary-fixed-variant": "#5a00c6", "on-background": "#191c1e", "surface-container-highest": "#e0e3e5", "tertiary-container": "#5500bc", "tertiary-fixed": "#eaddff", "surface-container-lowest": "#ffffff", "surface-variant": "#e0e3e5", "on-tertiary-container": "#bf9fff", "tertiary-fixed-dim": "#d2bbff", "surface-container-high": "#e6e8ea", "on-error-container": "#93000a", "on-secondary-container": "#006f66", "secondary-fixed": "#89f5e7", "surface": "#f7f9fb", "on-primary-fixed-variant": "#3b35a7", "surface-container-low": "#f2f4f6", "on-primary": "#ffffff", "on-error": "#ffffff", "inverse-primary": "#c3c0ff", "secondary-fixed-dim": "#6bd8cb", "secondary-container": "#86f2e4", "on-tertiary-fixed": "#25005a", "secondary": "#006a61", "on-surface-variant": "#464553", "on-surface": "#191c1e", "error-container": "#ffdad6", "on-primary-fixed": "#0f0069", "on-secondary-fixed-variant": "#005049", "inverse-on-surface": "#eff1f3", "outline-variant": "#c8c4d5", "error": "#ba1a1a", "primary-container": "#3730a3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2rem", "margin": "2rem", "space-md": "1rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "title-lg": ["Inter"], "label-sm": ["Inter"], "title-md": ["Inter"], "headline-xl": ["Inter"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><img alt="ResolveTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xi-OnxUANYIV9Z1K-uS1GPpWOFtkkGi-hhH6BLWfy_JTjoeLDnoZGy9ArD5k-GeRQcxc7yWlDlHf2iPo5TwqAnVNV1U6UEK2Jr3tIupGbc-sXGBH9nkXHJy8ikIIFAj-uJ5xECl6-xXDgP1yUAffWeq9cbjcp27X4mSZfssRY2hB7pSmKdY6GYkXkiW1-xl_1TKJB4GGYSzCkUzmSvttGlkdO7ICLSG_jo_I5P5ISz2Q"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight">ResolveTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Govt. of Karnataka</span></div></div><div class="px-3 py-2 rounded-xl bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-md text-label-md text-on-surface">District Command</span></div><span class="font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant px-2 py-0.5 rounded-full">Zone 04</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-title-sm rounded-xl"><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="complaints" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Complaints</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reminder-centre" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Reminder Centre</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="escalation-centre" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Escalation Centre</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="action-history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Action History</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="departments" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Departments</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-3 px-3"><div class="p-3 rounded-xl bg-surface-container-high flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">SLA Resolution Target</span><span class="font-label-sm text-label-sm text-secondary font-semibold">92.4%</span></div><div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full rounded-full w-[92%]"></div></div></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">Portal Build v3.4.1</span><span class="font-label-sm text-label-sm text-on-surface-variant">NIC Karnataka</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 z-30 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1"><div class="hidden xl:flex items-center gap-2 bg-error-container text-on-error-container px-3 py-1.5 rounded-lg"><span class="material-symbols-outlined text-[18px] text-error">campaign</span><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-error">EMERGENCY SOS:</span><span class="font-body-sm text-body-sm truncate max-w-md text-on-error-container">3 Taluk level drinking water grievances crossed Tier-3 deadline</span></div></div><div class="flex items-center gap-space-md"><div class="bg-surface-container p-1 rounded-lg flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" type="button">English</button><button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">ಕನ್ನಡ</button></div><div class="relative flex items-center justify-center p-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface cursor-pointer transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold">14</span></div><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-3 pl-1"><div class="text-right hidden sm:flex flex-col"><span class="font-title-sm text-title-sm text-on-surface leading-tight">Dr. S. K. Nandeesh, IAS</span><span class="font-label-sm text-label-sm text-on-surface-variant">District Deputy Commissioner</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-tint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQctWSVR_NfhxSinxny_kEMx8rUA6qaPnrvqCdyZh7pRlPmjCi3nWUrSpGsMlFOy-7QmTqBOkVPDzR-cpVw8WPBUHuC-N0-tWBimG6JpWIiizJUzSN5IkDoGuHGga0fg1uA87jhpNHiW_comCrnHffGKpqVIHBXR0r5DDeCDTQFbH3gW_DSK7nGC_QHlr0Z8sr_TfNMNvRGDwIknl13tVoF_hC912fH9D46M2uILlu"/></div></div></div></header><main class="w-full pt-16 bg-background px-space-lg py-space-lg min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- Top Bar / Actionable Header Strip -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>ResolveTrack</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-semibold">Reminder Centre / ಜ್ಞಾಪನಾ ಕೇಂದ್ರ</span>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Reminder Centre <span class="text-on-surface-variant font-headline-sm text-headline-sm font-normal">| ಜ್ಞಾಪನಾ ಕೇಂದ್ರ</span>
+</h1>
+<div class="flex items-center gap-2 px-2.5 py-1 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-semibold">Engine Online</span>
+<span class="opacity-70">• Poll Cycle 5m</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-4xl">
+        Real-time tracking and dispatch of automated SMS, WhatsApp, and IVR reminders to nodal officers and field contractors under the Karnataka Guarantee of Services to Citizens (SAKALA) Act.
+      </p>
+</div>
+<!-- Right Header Actions -->
+<div class="flex flex-wrap items-center gap-2">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span>Configure Escalation Rules</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-xl bg-primary text-on-primary hover:bg-primary-container transition-colors font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">cell_tower</span>
+<span>Trigger Manual Broadcast</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Log</span>
+</button>
+</div>
+</div>
+<!-- Primary Metric Summary Cards Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Card 1: Upcoming Today -->
+<div class="relative overflow-hidden p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Upcoming Today</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಇಂದಿನ ನಿರೀಕ್ಷಿತ ಜ್ಞಾಪನೆಗಳು</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/40 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3">
+<span class="font-headline-xl text-headline-xl text-primary font-bold">38</span>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed/60 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+6 from yesterday</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-2 bg-surface-container-low/50 px-3 py-2 rounded-xl">
+<span class="font-medium text-on-surface">14 within next 2 hours</span>
+<span class="text-tertiary font-semibold font-label-sm text-label-sm">Tier-1 Warning</span>
+</div>
+</div>
+<!-- Card 2: Generated Today -->
+<div class="relative overflow-hidden p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Generated Today</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಇಂದು ಕಳುಹಿಸಲಾದ ಜ್ಞಾಪನೆಗಳು</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed/50 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">send</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3">
+<span class="font-headline-xl text-headline-xl text-secondary font-bold">142</span>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>Delivery rate 99.2%</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm pt-2 bg-surface-container-low/50 px-3 py-2 rounded-xl">
+<div class="flex items-center gap-2 font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">98</span> SMS
+          <span>•</span>
+<span class="font-semibold text-on-surface">32</span> WhatsApp
+          <span>•</span>
+<span class="font-semibold text-on-surface">12</span> IVR
+        </div>
+<span class="text-secondary font-semibold font-label-sm text-label-sm">Auto-dispatched</span>
+</div>
+</div>
+<!-- Card 3: Unacknowledged Warnings -->
+<div class="relative overflow-hidden p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between gap-4">
+<div class="flex items-start justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error uppercase tracking-wider font-semibold">Unacknowledged Warnings</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ಒಪ್ಪಿಕೊಳ್ಳದ ಎಚ್ಚರಿಕೆಗಳು</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+</div>
+</div>
+<div class="flex items-baseline gap-3">
+<span class="font-headline-xl text-headline-xl text-error font-bold">19</span>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+<span>Requires Escalation</span>
+</div>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm pt-2 bg-error-container/30 px-3 py-2 rounded-xl">
+<span class="text-error font-medium truncate">Overdue &gt; 4h: 7 dockets flagged</span>
+<span class="text-on-error-container font-semibold font-label-sm text-label-sm shrink-0">DC Salary Penalty ₹250/d</span>
+</div>
+</div>
+</div>
+<!-- Operational Filter, Search, and Tabs Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+<!-- Tabs Selector -->
+<div class="flex items-center p-1 bg-surface-container rounded-xl font-label-md text-label-md">
+<button class="px-4 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+          Upcoming <span class="ml-1 px-1.5 py-0.2 rounded-full bg-surface-container-highest text-[10px]">38</span>
+</button>
+<button class="px-4 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-semibold shadow-sm transition-colors" type="button">
+          Generated <span class="ml-1 px-1.5 py-0.2 rounded-full bg-primary-fixed text-on-primary-fixed text-[10px]">142</span>
+</button>
+<button class="px-4 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+          Acknowledged <span class="ml-1 px-1.5 py-0.2 rounded-full bg-surface-container-highest text-[10px]">123</span>
+</button>
+</div>
+<!-- Quick Status Filter Indicators -->
+<div class="flex items-center gap-2 overflow-x-auto py-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Filter by Status:</span>
+<button class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Overdue (19)
+        </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span> Approaching (41)
+        </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1.5" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Routine (82)
+        </button>
+</div>
+</div>
+<!-- Search Inputs & Dropdowns Row -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-3 pt-1">
+<div class="md:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low text-on-surface placeholder:text-outline rounded-xl font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-inner" placeholder="Search by Docket ID, Officer name, or Mobile (e.g. #KA-2025-87402)..." type="text"/>
+</div>
+<div class="md:col-span-2">
+<select class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-xl font-label-md text-label-md focus:outline-none">
+<option>All Depts (BWSSB, BBMP...)</option>
+<option>BWSSB Water &amp; Sewage</option>
+<option>BBMP Solid Waste &amp; Roads</option>
+<option>BESCOM Power Utility</option>
+<option>Health &amp; Family Welfare</option>
+<option>Revenue (Bhoomi Records)</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<select class="w-full px-3 py-2 bg-surface-container-low text-on-surface rounded-xl font-label-md text-label-md focus:outline-none">
+<option>Reason: All (Overdue &amp; Imminent)</option>
+<option>Statutory SLA Breached</option>
+<option>Deadline &lt; 4h Remaining</option>
+<option>Sec 14 Show Cause Prime</option>
+<option>Scheduled Recurring Nudge</option>
+</select>
+</div>
+<div class="md:col-span-1">
+<select class="w-full px-2 py-2 bg-surface-container-low text-on-surface rounded-xl font-label-md text-label-md focus:outline-none">
+<option>Channel: All</option>
+<option>SMS Gateway</option>
+<option>WhatsApp API</option>
+<option>IVR Voice Bot</option>
+</select>
+</div>
+<div class="md:col-span-2">
+<select class="w-full px-3 py-2 bg-surface-container text-on-surface rounded-xl font-label-md text-label-md focus:outline-none font-semibold">
+<option>Sort: Priority / Expiry soonest</option>
+<option>Sort: Generated (Latest first)</option>
+<option>Sort: Penalty Accrual (High to Low)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Main Content Layout Grid (Feed + Auxiliary Intelligence Panel) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Case Cards Feed (8 Columns on desktop) -->
+<div class="xl:col-span-8 flex flex-col gap-4">
+<!-- Card 1: Critical Overdue Breached (BWSSB) -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-4">
+<!-- Colored Spine Left Accent -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pl-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary font-bold">#KA-2025-87402</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">RSK-2026-001</span>
+<span class="px-2.5 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold tracking-wide">
+              STATUTORY OVERDUE (Breached by 14h)
+            </span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-error font-label-sm text-label-sm font-semibold flex items-center gap-1 self-start sm:self-auto">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+            Tier-2 DC Escalation
+          </span>
+</div>
+<div class="pl-2 flex flex-col gap-1.5">
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-primary transition-colors cursor-pointer">
+            Frequent sewage overflow and contaminated drinking water line in Vidyaranyapura 4th Cross
+          </h2>
+<div class="flex flex-wrap items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="font-medium text-on-surface">BWSSB</span>
+<span>•</span>
+<span>Water Supply &amp; Contamination</span>
+<span>•</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Ward 08 (Yelahanka Zone)</span>
+</div>
+</div>
+<!-- Trigger Reason Strip -->
+<div class="ml-2 p-3 rounded-xl bg-error-container/40 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">report_problem</span>
+<div class="flex flex-col gap-0.5 font-body-sm text-body-sm">
+<span class="text-error font-semibold">SAKALA SLA 48h limit lapsed with 0 field updates logged.</span>
+<span class="text-on-surface-variant">Automatic Sec 14 Show Cause notice primed for DC endorsement. Daily ₹250 punitive wage deduction initiated.</span>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="ml-2 grid grid-cols-1 md:grid-cols-3 gap-3 p-3 rounded-xl bg-surface-container-low font-label-md text-label-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Time Generated</span>
+<span class="text-on-surface font-semibold">Today, 08:30 AM</span>
+<span class="text-on-surface-variant text-[11px]">2h 15m ago • Auto Trigger</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Assigned Recipient</span>
+<span class="text-on-surface font-semibold truncate">Er. K. V. Mahadevappa</span>
+<span class="text-on-surface-variant text-[11px]">AEE BWSSB • +91 98451-XXXXX</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Delivery Status</span>
+<span class="text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync_problem</span>
+              Unacknowledged
+            </span>
+<span class="text-on-surface-variant text-[11px]">SMS &amp; IVR Voice Call Dispatched</span>
+</div>
+</div>
+<!-- Actions Footer -->
+<div class="ml-2 flex flex-wrap items-center justify-between gap-3 pt-2">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Open Complaint</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Acknowledge</span>
+</button>
+</div>
+<button class="flex items-center gap-1 text-primary hover:underline font-label-sm text-label-sm font-semibold" type="button">
+<span class="material-symbols-outlined text-[16px]">cell_tower</span>
+<span>Re-send Urgent Nudge (WhatsApp)</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Deadline Approaching - Urgent (BWSSB Main Burst) -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-4">
+<!-- Amber Spine Left Accent -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-amber-500"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pl-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary font-bold">#KA-2025-87910</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">RSK-2026-044</span>
+<span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-semibold tracking-wide">
+              DEADLINE APPROACHING (3h 45m remaining)
+            </span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1 self-start sm:self-auto">
+<span class="material-symbols-outlined text-[14px] text-amber-600">bolt</span>
+            High Priority
+          </span>
+</div>
+<div class="pl-2 flex flex-col gap-1.5">
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-primary transition-colors cursor-pointer">
+            High-pressure distribution main crack flooding Thindlu Main Road
+          </h2>
+<div class="flex flex-wrap items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="font-medium text-on-surface">BWSSB</span>
+<span>•</span>
+<span>Pipeline Main Burst</span>
+<span>•</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Ward 09 (Byatarayanapura)</span>
+</div>
+</div>
+<!-- Trigger Reason Strip -->
+<div class="ml-2 p-3 rounded-xl bg-amber-50/60 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-amber-600 text-[18px] shrink-0 mt-0.5">hourglass_top</span>
+<div class="flex flex-col gap-0.5 font-body-sm text-body-sm">
+<span class="text-amber-900 font-semibold">Statutory 24h milestone expires at 01:15 PM today.</span>
+<span class="text-on-surface-variant">No engineering sign-off uploaded. Sub-contractor deployment required within 90 minutes.</span>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="ml-2 grid grid-cols-1 md:grid-cols-3 gap-3 p-3 rounded-xl bg-surface-container-low font-label-md text-label-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Time Generated</span>
+<span class="text-on-surface font-semibold">Today, 09:15 AM</span>
+<span class="text-on-surface-variant text-[11px]">1h 30m ago • Priority Batch</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Assigned Recipient</span>
+<span class="text-on-surface font-semibold truncate">Er. R. S. Patil &amp; L&amp;T Urban</span>
+<span class="text-on-surface-variant text-[11px]">Exec Engineer • +91 94480-XXXXX</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Delivery Status</span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+              Delivered &amp; Read
+            </span>
+<span class="text-on-surface-variant text-[11px]">WhatsApp read at 09:22 AM</span>
+</div>
+</div>
+<!-- Actions Footer -->
+<div class="ml-2 flex flex-wrap items-center justify-between gap-3 pt-2">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Open Complaint</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Acknowledge</span>
+</button>
+</div>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>View Delivery Receipt</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Critical Overdue - Health & Family Welfare -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-4">
+<!-- Crimson Spine Left Accent -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pl-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary font-bold">#KA-2025-90514</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">RSK-2026-042</span>
+<span class="px-2.5 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold tracking-wide">
+              STATUTORY OVERDUE (Breached by 6h)
+            </span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-error-container text-error font-label-sm text-label-sm font-semibold flex items-center gap-1 self-start sm:self-auto">
+<span class="material-symbols-outlined text-[14px]">emergency</span>
+            Critical SOS
+          </span>
+</div>
+<div class="pl-2 flex flex-col gap-1.5">
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-primary transition-colors cursor-pointer">
+            Anti-Rabies vaccine stockout at primary health centre Hesaraghatta
+          </h2>
+<div class="flex flex-wrap items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="font-medium text-on-surface">Health &amp; Family Welfare</span>
+<span>•</span>
+<span>Essential Medicines &amp; Cold Chain</span>
+<span>•</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Taluk Health Office Yelahanka</span>
+</div>
+</div>
+<!-- Trigger Reason Strip -->
+<div class="ml-2 p-3 rounded-xl bg-error-container/40 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">vaccines</span>
+<div class="flex flex-col gap-0.5 font-body-sm text-body-sm">
+<span class="text-error font-semibold">Cold chain verification response unsubmitted after 24h statutory window.</span>
+<span class="text-on-surface-variant">Public health risk score 34/100. Emergency stock transfer directive primed for District Drug Warehouse.</span>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="ml-2 grid grid-cols-1 md:grid-cols-3 gap-3 p-3 rounded-xl bg-surface-container-low font-label-md text-label-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Time Generated</span>
+<span class="text-on-surface font-semibold">Today, 06:45 AM</span>
+<span class="text-on-surface-variant text-[11px]">4h ago • Emergency IVR Pipeline</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Assigned Recipient</span>
+<span class="text-on-surface font-semibold truncate">Dr. B. Shylaja</span>
+<span class="text-on-surface-variant text-[11px]">Taluk Health Officer • +91 98860-XXXXX</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Delivery Status</span>
+<span class="text-amber-700 font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">phone_in_talk</span>
+              Call Answered
+            </span>
+<span class="text-on-surface-variant text-[11px]">IVR duration 48s • Ack pending</span>
+</div>
+</div>
+<!-- Actions Footer -->
+<div class="ml-2 flex flex-wrap items-center justify-between gap-3 pt-2">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Open Complaint</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-secondary text-on-secondary hover:bg-on-secondary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Acknowledge</span>
+</button>
+</div>
+<span class="text-error font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+            Forwarded to District Surgeon
+          </span>
+</div>
+</div>
+<!-- Card 4: Deadline Approaching - Revenue/Bhoomi -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-4">
+<!-- Amber Spine Left Accent -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-amber-500"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pl-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary font-bold">#KA-2025-86219</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">RSK-2026-089</span>
+<span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-semibold tracking-wide">
+              DEADLINE APPROACHING (5h 20m remaining)
+            </span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 self-start sm:self-auto">
+            Medium Priority
+          </span>
+</div>
+<div class="pl-2 flex flex-col gap-1.5">
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-primary transition-colors cursor-pointer">
+            Bhoomi RTC mutation delay &gt;45 days following partition deed registration
+          </h2>
+<div class="flex flex-wrap items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="font-medium text-on-surface">Revenue Department</span>
+<span>•</span>
+<span>Land Records &amp; Mutations</span>
+<span>•</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Anekal Taluk Office</span>
+</div>
+</div>
+<!-- Trigger Reason Strip -->
+<div class="ml-2 p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">info</span>
+<div class="flex flex-col gap-0.5 font-body-sm text-body-sm">
+<span class="text-on-surface font-semibold">Sakala statutory 45-day SLA deadline expiring today at 05:00 PM.</span>
+<span class="text-on-surface-variant">Citizen inquiry escalated via Janaspandana helpline. Tehsildar auto-notified.</span>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="ml-2 grid grid-cols-1 md:grid-cols-3 gap-3 p-3 rounded-xl bg-surface-container-low font-label-md text-label-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Time Generated</span>
+<span class="text-on-surface font-semibold">Today, 10:00 AM</span>
+<span class="text-on-surface-variant text-[11px]">45m ago • SAKALA Portal Nudge</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Assigned Recipient</span>
+<span class="text-on-surface font-semibold truncate">R. Muniswamy</span>
+<span class="text-on-surface-variant text-[11px]">Shirastedar • +91 97312-XXXXX</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Delivery Status</span>
+<span class="text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span>
+              Sent
+            </span>
+<span class="text-on-surface-variant text-[11px]">Portal Banner Alert &amp; SMS</span>
+</div>
+</div>
+<!-- Actions Footer -->
+<div class="ml-2 flex flex-wrap items-center justify-between gap-3 pt-2">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Open Complaint</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span>
+<span>Acknowledge</span>
+</button>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Bhoomi App Synced</span>
+</div>
+</div>
+<!-- Card 5: Upcoming Preview Item -->
+<div class="relative overflow-hidden bg-surface-container-lowest rounded-2xl shadow-sm hover:shadow-md transition-shadow p-space-lg flex flex-col gap-4 opacity-90">
+<!-- Blue Spine Left Accent -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pl-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-title-sm text-title-sm text-primary font-bold">#KA-2025-88122</span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold tracking-wide">
+              SCHEDULED UPCOMING (in 1h 15m)
+            </span>
+</div>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1 self-start sm:self-auto">
+            Routine Nudge
+          </span>
+</div>
+<div class="pl-2 flex flex-col gap-1.5">
+<h2 class="font-title-lg text-title-lg text-on-surface font-semibold hover:text-primary transition-colors cursor-pointer">
+            Commercial apartment complex electromagnetic bulk water meter zero flow calibration
+          </h2>
+<div class="flex flex-wrap items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="font-medium text-on-surface">BWSSB</span>
+<span>•</span>
+<span>Bulk Meter Malfunction</span>
+<span>•</span>
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Ward 08 (North Division)</span>
+</div>
+</div>
+<!-- Trigger Reason Strip -->
+<div class="ml-2 p-3 rounded-xl bg-surface-container-low flex items-start gap-2.5">
+<span class="material-symbols-outlined text-outline text-[18px] shrink-0 mt-0.5">schedule</span>
+<div class="flex flex-col gap-0.5 font-body-sm text-body-sm">
+<span class="text-on-surface font-medium">Scheduled 12h pre-expiry warning nudge will dispatch at 11:45 AM.</span>
+<span class="text-on-surface-variant">Triggers automatically if preliminary field inspection report is not uploaded before schedule.</span>
+</div>
+</div>
+<!-- Metadata Grid -->
+<div class="ml-2 grid grid-cols-1 md:grid-cols-3 gap-3 p-3 rounded-xl bg-surface-container-low font-label-md text-label-md">
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Queue Scheduled</span>
+<span class="text-on-surface font-semibold">11:45 AM Today</span>
+<span class="text-on-surface-variant text-[11px]">Countdown: 1h 15m</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Planned Recipient</span>
+<span class="text-on-surface font-semibold truncate">Pradeep Kumar</span>
+<span class="text-on-surface-variant text-[11px]">Meter Div Inspector • +91 99002-XXXXX</span>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Target Route</span>
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">cell_tower</span>
+              Automated SMS + IVR
+            </span>
+<span class="text-on-surface-variant text-[11px]">Gateway route #2 reserved</span>
+</div>
+</div>
+<!-- Actions Footer -->
+<div class="ml-2 flex flex-wrap items-center justify-between gap-3 pt-2">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+<span>Open Complaint</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-surface-container-high text-on-surface hover:bg-surface-container-highest font-label-md text-label-md transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">event_busy</span>
+<span>Pre-empt / Dismiss</span>
+</button>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Ruleset: SAKALA Rule 14B</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Auxiliary Operational Intelligence Panel (4 Columns on desktop) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg">
+<!-- Panel 1: Channel Dispatch Velocity -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">speed</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Channel Dispatch Velocity</h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold bg-secondary-container/40 px-2 py-0.5 rounded-full">
+            Realtime
+          </span>
+</div>
+<div class="flex flex-col gap-3 font-body-sm text-body-sm">
+<!-- SMS Stats -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">sms</span>
+<span class="font-medium text-on-surface">SMS Gateway (Govt BSNL)</span>
+</div>
+<span class="font-bold text-on-surface">98 dispatched</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full w-[99.1%]"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>Delivery Success: 99.1%</span>
+<span>Avg Latency: 2.1s</span>
+</div>
+</div>
+<!-- WhatsApp API Stats -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span class="font-medium text-on-surface">WhatsApp Business API</span>
+</div>
+<span class="font-bold text-on-surface">32 dispatched</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-[94%]"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>Read within 15 min: 94%</span>
+<span>Read Receipts Active</span>
+</div>
+</div>
+<!-- Automated IVR Voice Bot -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary">phone_in_talk</span>
+<span class="font-medium text-on-surface">Automated IVR Voice Bot</span>
+</div>
+<span class="font-bold text-on-surface">12 dispatched</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-[83%]"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>10 Completed • 2 Unanswered</span>
+<span>Retrying in 10m</span>
+</div>
+</div>
+</div>
+<!-- Inline Dispatch Activity Sparkline SVG -->
+<div class="pt-2 flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>24-Hour Dispatch Cadence</span>
+<span class="font-semibold text-on-surface">Peak: 09:30 AM</span>
+</div>
+<div class="h-14 w-full bg-surface-container-low rounded-xl p-2 flex items-end">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 100 30">
+<path class="text-primary" d="M 0,25 Q 10,22 20,26 T 40,18 T 60,6 T 80,12 T 100,10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<circle class="fill-error" cx="60" cy="6" r="3"></circle>
+<circle class="fill-secondary" cx="100" cy="10" r="2.5"></circle>
+</svg>
+</div>
+</div>
+</div>
+<!-- Panel 2: Statutory Nudge SLA Ladder (SAKALA Act Protocol) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_tree</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Statutory Nudge SLA Ladder</h3>
+</div>
+<span class="text-on-surface-variant font-label-sm text-label-sm">SAKALA Sec 14</span>
+</div>
+<div class="relative flex flex-col gap-4 pl-4 pt-1 font-body-sm text-body-sm">
+<!-- Timeline vertical connecting line -->
+<div class="absolute left-2 top-2 bottom-4 w-0.5 bg-surface-container-high"></div>
+<!-- Step 1 -->
+<div class="relative flex items-start gap-3">
+<div class="w-4 h-4 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0 -ml-[13px] z-10">
+<span class="material-symbols-outlined text-[10px]">check</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-on-surface">T-12 Hours</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Gentle Alert</span>
+</div>
+<span class="text-on-surface-variant text-[12px]">Dispatched via Portal Alert Banner &amp; SMS</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex items-start gap-3">
+<div class="w-4 h-4 rounded-full bg-amber-500 text-on-primary flex items-center justify-center shrink-0 -ml-[13px] z-10">
+<span class="material-symbols-outlined text-[10px]">priority_high</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-on-surface">T-4 Hours</span>
+<span class="font-label-sm text-label-sm text-amber-700 font-semibold">Urgent Warning</span>
+</div>
+<span class="text-on-surface-variant text-[12px]">WhatsApp Rich Card &amp; Automated IVR Voice call</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex items-start gap-3">
+<div class="w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center shrink-0 -ml-[13px] z-10 animate-ping">
+</div>
+<div class="w-4 h-4 rounded-full bg-error text-on-error flex items-center justify-center shrink-0 -ml-[13px] z-20">
+<span class="material-symbols-outlined text-[10px]">warning</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-error">T+0 Overdue Breach</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.2 bg-error-container text-on-error-container rounded">Critical</span>
+</div>
+<span class="text-on-surface-variant text-[12px]">Formal Sec 14 Show Cause Notice &amp; DC Registry alert</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex items-start gap-3">
+<div class="w-4 h-4 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shrink-0 -ml-[13px] z-10">
+<span class="material-symbols-outlined text-[10px]">attach_money</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-semibold text-on-surface">T+24h Overdue</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Statutory Penalty</span>
+</div>
+<span class="text-on-surface-variant text-[12px]">Daily ₹250 wage reduction added to Treasury docket</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Panel 3: Live Acknowledgments Audit Log -->
+<div class="bg-surface-container-lowest p-space-lg rounded-2xl shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">assignment_turned_in</span>
+<h3 class="font-title-md text-title-md text-on-surface font-semibold">Recent Acknowledgments</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Live Feed</span>
+</div>
+<div class="flex flex-col gap-2.5 font-body-sm text-body-sm">
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-medium text-on-surface">Er. Suresh M. (AEE BBMP)</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">12m ago</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant text-[12px]">
+<span class="text-primary font-semibold">Docket #KA-2025-86540</span>
+<span class="text-secondary font-medium">Assigned to team</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-medium text-on-surface">Dr. Ramesh K. (THO)</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">38m ago</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant text-[12px]">
+<span class="text-primary font-semibold">Docket #KA-2025-85911</span>
+<span class="text-secondary font-medium">Action logged</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-medium text-on-surface">Chandrashekar B. (BESCOM)</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">1h 14m ago</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant text-[12px]">
+<span class="text-primary font-semibold">Docket #KA-2025-87102</span>
+<span class="text-secondary font-medium">Transformer replaced</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2 rounded-xl text-primary hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors flex items-center justify-center gap-1" type="button">
+<span>View All Redressal Acknowledgments</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for quick filter and acknowledgment feedback
+  document.addEventListener('DOMContentLoaded', () => {
+    const ackButtons = document.querySelectorAll('button:has(.material-symbols-outlined)');
+    ackButtons.forEach(btn => {
+      if (btn.textContent.includes('Acknowledge')) {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          btn.classList.add('bg-secondary', 'text-on-secondary');
+          btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done_all</span><span>Acknowledged</span>';
+          btn.disabled = true;
+        });
+      }
+    });
+  });
+</script></main></div></body></html>

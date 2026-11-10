@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#00201d", "primary-fixed": "#e2dfff", "on-primary-container": "#a9a7ff", "background": "#f7f9fb", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#eceef0", "inverse-surface": "#2d3133", "surface-bright": "#f7f9fb", "surface-dim": "#d8dadc", "primary-fixed-dim": "#c3c0ff", "tertiary": "#3a0085", "primary": "#1f108e", "surface-tint": "#544fc0", "outline": "#777584", "on-tertiary-fixed-variant": "#5a00c6", "on-background": "#191c1e", "surface-container-highest": "#e0e3e5", "tertiary-container": "#5500bc", "tertiary-fixed": "#eaddff", "surface-container-lowest": "#ffffff", "surface-variant": "#e0e3e5", "on-tertiary-container": "#bf9fff", "tertiary-fixed-dim": "#d2bbff", "surface-container-high": "#e6e8ea", "on-error-container": "#93000a", "on-secondary-container": "#006f66", "secondary-fixed": "#89f5e7", "surface": "#f7f9fb", "on-primary-fixed-variant": "#3b35a7", "surface-container-low": "#f2f4f6", "on-primary": "#ffffff", "on-error": "#ffffff", "inverse-primary": "#c3c0ff", "secondary-fixed-dim": "#6bd8cb", "secondary-container": "#86f2e4", "on-tertiary-fixed": "#25005a", "secondary": "#006a61", "on-surface-variant": "#464553", "on-surface": "#191c1e", "error-container": "#ffdad6", "on-primary-fixed": "#0f0069", "on-secondary-fixed-variant": "#005049", "inverse-on-surface": "#eff1f3", "outline-variant": "#c8c4d5", "error": "#ba1a1a", "primary-container": "#3730a3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2rem", "margin": "2rem", "space-md": "1rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "title-lg": ["Inter"], "label-sm": ["Inter"], "title-md": ["Inter"], "headline-xl": ["Inter"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><img alt="ResolveTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xi-OnxUANYIV9Z1K-uS1GPpWOFtkkGi-hhH6BLWfy_JTjoeLDnoZGy9ArD5k-GeRQcxc7yWlDlHf2iPo5TwqAnVNV1U6UEK2Jr3tIupGbc-sXGBH9nkXHJy8ikIIFAj-uJ5xECl6-xXDgP1yUAffWeq9cbjcp27X4mSZfssRY2hB7pSmKdY6GYkXkiW1-xl_1TKJB4GGYSzCkUzmSvttGlkdO7ICLSG_jo_I5P5ISz2Q"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight">ResolveTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Govt. of Karnataka</span></div></div><div class="px-3 py-2 rounded-xl bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-md text-label-md text-on-surface">District Command</span></div><span class="font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant px-2 py-0.5 rounded-full">Zone 04</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-title-sm rounded-xl"><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="complaints" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Complaints</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reminder-centre" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Reminder Centre</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="escalation-centre" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Escalation Centre</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="action-history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Action History</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="departments" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Departments</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-3 px-3"><div class="p-3 rounded-xl bg-surface-container-high flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">SLA Resolution Target</span><span class="font-label-sm text-label-sm text-secondary font-semibold">92.4%</span></div><div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full rounded-full w-[92%]"></div></div></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">Portal Build v3.4.1</span><span class="font-label-sm text-label-sm text-on-surface-variant">NIC Karnataka</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 z-30 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1"><div class="hidden xl:flex items-center gap-2 bg-error-container text-on-error-container px-3 py-1.5 rounded-lg"><span class="material-symbols-outlined text-[18px] text-error">campaign</span><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-error">EMERGENCY SOS:</span><span class="font-body-sm text-body-sm truncate max-w-md text-on-error-container">3 Taluk level drinking water grievances crossed Tier-3 deadline</span></div></div><div class="flex items-center gap-space-md"><div class="bg-surface-container p-1 rounded-lg flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" type="button">English</button><button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">ಕನ್ನಡ</button></div><div class="relative flex items-center justify-center p-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface cursor-pointer transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold">14</span></div><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-3 pl-1"><div class="text-right hidden sm:flex flex-col"><span class="font-title-sm text-title-sm text-on-surface leading-tight">Dr. S. K. Nandeesh, IAS</span><span class="font-label-sm text-label-sm text-on-surface-variant">District Deputy Commissioner</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-tint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQctWSVR_NfhxSinxny_kEMx8rUA6qaPnrvqCdyZh7pRlPmjCi3nWUrSpGsMlFOy-7QmTqBOkVPDzR-cpVw8WPBUHuC-N0-tWBimG6JpWIiizJUzSN5IkDoGuHGga0fg1uA87jhpNHiW_comCrnHffGKpqVIHBXR0r5DDeCDTQFbH3gW_DSK7nGC_QHlr0Z8sr_TfNMNvRGDwIknl13tVoF_hC912fH9D46M2uILlu"/></div></div></div></header><main class="w-full pt-16 bg-background px-space-lg py-space-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Breadcrumb & Executive Title Header -->
+<section class="flex flex-col gap-4 mb-6">
+<div class="flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">space_dashboard</span> Dashboard
+        </span>
+<span class="text-on-surface-variant text-[12px]">/</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Escalation Centre</span>
+<span class="text-on-surface-variant text-[12px]">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-normal">ಮೇಲ್ವಿಚಾರಣಾ ಮೇಲ್ಮನವಿ ಕೇಂದ್ರ</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container px-3 py-1.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">SAKALA Act 2011: Live Audit Mode</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zone 04 District Grid</span>
+</div>
+</div>
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-4">
+<div class="max-w-3xl">
+<div class="flex items-center gap-3 mb-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Escalation Centre</h1>
+<span class="bg-error-container text-on-error-container font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold">
+            24 Breaches Active
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Supervisory oversight, multi-tier statutory breach review, and administrative reassignment command under Karnataka Guarantee of Services to Citizens (SAKALA) Act.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-2.5">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-outline">tune</span>
+<span>Filter Rules Configuration</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-secondary hover:bg-on-secondary-container text-on-secondary font-title-sm text-title-sm shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">swap_horiz</span>
+<span>Bulk Reassign Officers</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-title-sm text-title-sm shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Export Escalation Docket (PDF)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Summary Metric Strip -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+<!-- Metric 1: Total In Escalation -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Total In Escalation</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">24</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">dockets</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-error-container/60 text-error">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-3 pt-3 bg-surface-container-low/50 -mx-5 -mb-5 px-5 py-2">
+<span class="material-symbols-outlined text-[16px] text-error font-bold">arrow_upward</span>
+<span class="font-label-sm text-label-sm text-error font-bold">+4 Today</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant pl-1">Exceeded standard 72h window</span>
+</div>
+</div>
+<!-- Metric 2: Level 1 Supervisor Tagged -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-amber-500"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Level 1 (Supervisor Tagged)</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">15</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">dockets</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-amber-100 text-amber-800">
+<span class="material-symbols-outlined text-[24px]">supervisor_account</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-3 pt-3 bg-surface-container-low/50 -mx-5 -mb-5 px-5 py-2">
+<span class="material-symbols-outlined text-[16px] text-amber-700">timer</span>
+<span class="font-label-sm text-label-sm text-amber-800 font-semibold">Avg breach: 2.4 days</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant pl-1">Taluk AEE level</span>
+</div>
+</div>
+<!-- Metric 3: Level 2 Dept Head / DC Tagged -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Level 2 (Dept Head / DC Tagged)</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">9</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">dockets</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-tertiary-fixed text-tertiary">
+<span class="material-symbols-outlined text-[24px]">gavel</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-3 pt-3 bg-surface-container-low/50 -mx-5 -mb-5 px-5 py-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">warning</span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Section 14 notice pending</span>
+</div>
+</div>
+<!-- Metric 4: Critical Health Deficit -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Critical Health Deficit (&lt;30)</span>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-headline-xl text-headline-xl text-error font-bold tracking-tight">6</span>
+<span class="font-label-sm text-label-sm text-error">dockets</span>
+</div>
+</div>
+<div class="p-2.5 rounded-xl bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[24px]">currency_rupee</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 mt-3 pt-3 bg-surface-container-low/50 -mx-5 -mb-5 px-5 py-2">
+<span class="material-symbols-outlined text-[16px] text-error">notifications_active</span>
+<span class="font-label-sm text-label-sm text-error font-bold">Active deduction alert ₹250/day</span>
+</div>
+</div>
+</section>
+<!-- Main Split Canvas: Left Data Table (72%) vs Right Rules & Legal Panel (28%) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6">
+<!-- Main Column (Approx 72% / 8 or 9 cols on xl) -->
+<div class="xl:col-span-9 flex flex-col gap-4">
+<!-- Filter and Query Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+<!-- Text Search with Kannada Prompt Support -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-low pl-10 pr-4 py-2 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search by Docket ID, title, or officer name / ಕುಂದುಕೊರತೆ ಸಂಖ್ಯೆ ನಮೂದಿಸಿ..." type="text"/>
+</div>
+<!-- Quick Tier Radios / Pills -->
+<div class="flex items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1.5 rounded-md bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm font-semibold" type="button">
+              All Breaches (24)
+            </button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+              L1 Supervisor (15)
+            </button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+              L2 Dept Head (9)
+            </button>
+</div>
+</div>
+<!-- Filter Dropdown Row -->
+<div class="flex flex-wrap items-center gap-2.5 pt-2 bg-surface-container-low/30 -mx-4 -mb-4 px-4 py-3 rounded-b-xl">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mr-1">Filter by:</span>
+<select class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-3 py-1.5 rounded-lg shadow-sm focus:outline-none">
+<option>Department: All Entities (5)</option>
+<option>BWSSB (Water &amp; Sewerage)</option>
+<option>BBMP (Muncipal Corp)</option>
+<option>BESCOM (Power Distribution)</option>
+<option>Revenue Dept (Bhoomi/RTC)</option>
+<option>Health &amp; Family Welfare</option>
+</select>
+<select class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-3 py-1.5 rounded-lg shadow-sm focus:outline-none">
+<option>Overdue Range: All Breaches</option>
+<option>&gt; 2 Days Overdue</option>
+<option>&gt; 5 Days Critical</option>
+<option>&gt; 7 Days Statutory Violation</option>
+</select>
+<select class="bg-surface-container-lowest text-on-surface font-label-sm text-label-sm px-3 py-1.5 rounded-lg shadow-sm focus:outline-none">
+<option>Civic Health Score: All</option>
+<option>Critical Deficit (&lt; 30)</option>
+<option>At-Risk (30 - 55)</option>
+</select>
+<div class="ml-auto flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing 6 high-priority dockets</span>
+<button class="p-1 rounded text-on-surface-variant hover:text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Grievance Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<th class="py-3 px-4 font-semibold">Docket ID</th>
+<th class="py-3 px-4 font-semibold min-w-[220px]">Complaint Title &amp; Ward</th>
+<th class="py-3 px-4 font-semibold">Department</th>
+<th class="py-3 px-4 font-semibold min-w-[170px]">Responsible Officer</th>
+<th class="py-3 px-4 font-semibold">Days Overdue</th>
+<th class="py-3 px-4 font-semibold">Reminders Ignored</th>
+<th class="py-3 px-4 font-semibold">Escalation Tier</th>
+<th class="py-3 px-4 font-semibold text-center">Civic Health</th>
+<th class="py-3 px-4 font-semibold text-right pr-5">Administrative Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Case Row 1: Water Contamination / L2 Urgent -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-primary font-bold hover:underline cursor-pointer">#KA-2025-87402</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider bg-error-container text-on-error-container px-1.5 py-0.5 rounded font-bold w-fit">
+                      Emergency SOS
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-sm">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold leading-snug">
+                      Frequent sewage overflow into Cauvery drinking line
+                    </span>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-body-sm text-[12px]">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Drinking Water Contamination</span>
+<span>•</span>
+<span>Ward 142 (Kengeri Satellite)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold whitespace-nowrap">
+                    BWSSB
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface leading-tight font-medium">Er. K. V. Mahadevappa</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Assistant Exec Engineer (AEE)</span>
+<span class="font-label-sm text-[11px] text-outline">Kengeri Sub-Division</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-error font-bold whitespace-nowrap">+4.2 Days (Overdue)</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">SAKALA: 48h Max Limit</span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sms_failed</span> 3 Ignored
+                    </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-fit">
+                      2 SMS, 1 Auto-IVR
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1 w-fit whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> L2: Head of Dept / DC
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-title-sm text-title-sm text-error font-extrabold bg-error-container/40 px-2 py-0.5 rounded-full">
+                      28/100
+                    </span>
+<span class="font-label-sm text-[10px] text-error font-medium mt-0.5">Critical</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right pr-5">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-md bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                      Review
+                    </button>
+<button class="px-2.5 py-1.5 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                      Reassign
+                    </button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant" title="Add Supervisory Note" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Case Row 2: Vaccine Stockout / Direct L2 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-primary font-bold hover:underline cursor-pointer">#KA-2025-88194</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider bg-tertiary-fixed text-on-tertiary-fixed px-1.5 py-0.5 rounded font-bold w-fit">
+                      Cold Chain Alert
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-sm">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold leading-snug">
+                      Anti-Rabies vaccine stockout at primary health centre
+                    </span>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-body-sm text-[12px]">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Essential Drugs Shortage</span>
+<span>•</span>
+<span>Taluk PHC Nelamangala</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-semibold whitespace-nowrap">
+                    Health &amp; FW
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface leading-tight font-medium">Dr. B. Shylaja</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Taluk Health Officer (THO)</span>
+<span class="font-label-sm text-[11px] text-outline">Nelamangala Taluk</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-error font-bold whitespace-nowrap">+3.5 Days</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">SAKALA: 24h Emergency</span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sms_failed</span> 4 Ignored
+                    </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-fit">
+                      2 IVR, 2 SMS
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1 w-fit whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> L2: Head of Dept / DC
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-title-sm text-title-sm text-error font-extrabold bg-error-container/40 px-2 py-0.5 rounded-full">
+                      34/100
+                    </span>
+<span class="font-label-sm text-[10px] text-error font-medium mt-0.5">Critical</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right pr-5">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-md bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                      Review
+                    </button>
+<button class="px-2.5 py-1.5 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                      Reassign
+                    </button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant" title="Add Supervisory Note" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Case Row 3: Revenue / Bhoomi RTC Delay -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-primary font-bold hover:underline cursor-pointer">#KA-2025-79301</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-bold w-fit">
+                      Statutory SLA
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-sm">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold leading-snug">
+                      Bhoomi RTC mutation delay &gt;45 days past SLA limit
+                    </span>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-body-sm text-[12px]">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Land &amp; Revenue</span>
+<span>•</span>
+<span>Nadakacheri Yelahanka</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 font-semibold whitespace-nowrap">
+                    Revenue Dept
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface leading-tight font-medium">R. Muniswamy</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Shirastedar (Mutation Branch)</span>
+<span class="font-label-sm text-[11px] text-outline">Yelahanka Taluk Office</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="font-label-sm text-label-sm text-amber-800 font-bold whitespace-nowrap">+2.8 Days</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">SAKALA: 30 Working Days</span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-amber-600">sms</span> 2 Ignored
+                    </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-fit">
+                      WhatsApp, SMS
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center gap-1 w-fit whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> L1: Supervisory
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-title-sm text-title-sm text-amber-700 font-extrabold bg-amber-100 px-2 py-0.5 rounded-full">
+                      48/100
+                    </span>
+<span class="font-label-sm text-[10px] text-amber-800 font-medium mt-0.5">At-Risk</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right pr-5">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-md bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                      Review
+                    </button>
+<button class="px-2.5 py-1.5 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                      Reassign
+                    </button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant" title="Add Supervisory Note" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Case Row 4: Power / Transformer Sparking in Industrial Area -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-primary font-bold hover:underline cursor-pointer">#KA-2025-86510</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider bg-error-container text-on-error-container px-1.5 py-0.5 rounded font-bold w-fit">
+                      Public Safety
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-sm">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold leading-snug">
+                      Transformer sparking &amp; recurring blackouts in Peenya Ind. Area
+                    </span>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-body-sm text-[12px]">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">High Tension Grid</span>
+<span>•</span>
+<span>Peenya 2nd Stage Ward 41</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-semibold whitespace-nowrap">
+                    BESCOM
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface leading-tight font-medium">Er. T. S. Venkatesh</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Assistant Exec Engineer (Elec)</span>
+<span class="font-label-sm text-[11px] text-outline">Peenya O&amp;M Division</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-error font-bold whitespace-nowrap">+5.1 Days</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">SAKALA: 24h Hazard SLA</span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sms_failed</span> 3 Ignored
+                    </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-fit">
+                      1 IVR, 2 SMS
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-bold flex items-center gap-1 w-fit whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> L2: Head of Dept / DC
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-title-sm text-title-sm text-error font-extrabold bg-error-container/40 px-2 py-0.5 rounded-full">
+                      38/100
+                    </span>
+<span class="font-label-sm text-[10px] text-error font-medium mt-0.5">Critical</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right pr-5">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-md bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                      Review
+                    </button>
+<button class="px-2.5 py-1.5 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                      Reassign
+                    </button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant" title="Add Supervisory Note" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Case Row 5: BBMP Arterial Road Cave-in -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-primary font-bold hover:underline cursor-pointer">#KA-2025-90112</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-bold w-fit">
+                      Traffic Risk
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-sm">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold leading-snug">
+                      Main arterial road cave-in on Outer Ring Road junction
+                    </span>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-body-sm text-[12px]">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Major Roads &amp; Bridges</span>
+<span>•</span>
+<span>Mahadevapura Zone</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-semibold whitespace-nowrap">
+                    BBMP
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface leading-tight font-medium">E.E. H. R. Girish</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Executive Engineer (Infra)</span>
+<span class="font-label-sm text-[11px] text-outline">Road Infrastructure East</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="font-label-sm text-label-sm text-amber-800 font-bold whitespace-nowrap">+2.1 Days</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">SAKALA: 72h Pothole SLA</span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-amber-600">sms</span> 2 Ignored
+                    </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-fit">
+                      1 Portal, 1 SMS
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center gap-1 w-fit whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> L1: Supervisory
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-title-sm text-title-sm text-amber-700 font-extrabold bg-amber-100 px-2 py-0.5 rounded-full">
+                      52/100
+                    </span>
+<span class="font-label-sm text-[10px] text-amber-800 font-medium mt-0.5">At-Risk</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right pr-5">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-md bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                      Review
+                    </button>
+<button class="px-2.5 py-1.5 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                      Reassign
+                    </button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant" title="Add Supervisory Note" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Case Row 6: BWSSB High Pressure Main Crack -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-title-sm text-title-sm text-primary font-bold hover:underline cursor-pointer">#KA-2025-91040</span>
+<span class="font-label-sm text-[10px] uppercase tracking-wider bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-bold w-fit">
+                      Infrastructure
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1 max-w-sm">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold leading-snug">
+                      High-pressure distribution main crack flooding basements
+                    </span>
+<div class="flex flex-wrap items-center gap-1.5 text-on-surface-variant font-body-sm text-[12px]">
+<span class="bg-surface-container px-2 py-0.5 rounded text-on-surface">Piped Supply &amp; Pressure</span>
+<span>•</span>
+<span>HSR Sector 2 Ward 174</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold whitespace-nowrap">
+                    BWSSB
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface leading-tight font-medium">Er. S. N. Ramesh</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Assistant Executive Engineer</span>
+<span class="font-label-sm text-[11px] text-outline">Koramangala Valley Sub-Div</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="font-label-sm text-label-sm text-amber-800 font-bold whitespace-nowrap">+2.3 Days</span>
+</div>
+<span class="font-body-sm text-[11px] text-on-surface-variant block mt-0.5">SAKALA: 48h Pipe Burst SLA</span>
+</td>
+<td class="py-3.5 px-4 align-top">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-amber-600">sms</span> 2 Ignored
+                    </span>
+<span class="font-label-sm text-[11px] text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded w-fit">
+                      1 IVR, 1 SMS
+                    </span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top">
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center gap-1 w-fit whitespace-nowrap">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> L1: Supervisory
+                  </span>
+</td>
+<td class="py-3.5 px-4 align-top text-center">
+<div class="inline-flex flex-col items-center">
+<span class="font-title-sm text-title-sm text-amber-700 font-extrabold bg-amber-100 px-2 py-0.5 rounded-full">
+                      44/100
+                    </span>
+<span class="font-label-sm text-[10px] text-amber-800 font-medium mt-0.5">At-Risk</span>
+</div>
+</td>
+<td class="py-3.5 px-4 align-top text-right pr-5">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-2.5 py-1.5 rounded-md bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                      Review
+                    </button>
+<button class="px-2.5 py-1.5 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm transition-colors" type="button">
+                      Reassign
+                    </button>
+<button class="p-1.5 rounded-md hover:bg-surface-container text-on-surface-variant" title="Add Supervisory Note" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="bg-surface-container-low px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+              Showing <span class="font-semibold text-on-surface">1 - 6</span> of 24 escalated complaints
+            </span>
+<span class="text-on-surface-variant text-[12px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">District SLA Threshold: 92.4% Target</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 rounded bg-surface-container-lowest text-on-surface-variant opacity-50 cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold" type="button">1</button>
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">2</button>
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">3</button>
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm" type="button">4</button>
+<button class="p-1.5 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side Panel (Approx 28% / 3 cols on xl) -->
+<div class="xl:col-span-3 flex flex-col gap-4">
+<!-- 1. STATUTORY ESCALATION RULES CARD -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">rule_folder</span>
+<h2 class="font-title-md text-title-md text-on-surface tracking-tight">Active Statutory Escalation Rules</h2>
+</div>
+<!-- Prominent Rule Highlight -->
+<div class="bg-primary/5 rounded-lg p-3">
+<span class="font-label-sm text-[11px] font-bold text-primary tracking-wide block uppercase">Standard Operational Trigger</span>
+<p class="font-title-sm text-title-sm text-primary font-semibold mt-0.5 leading-snug">
+            Rule #ESC-01: Escalate after 2 days overdue with 2 unacknowledged reminders.
+          </p>
+</div>
+<!-- Detailed plain-text criteria -->
+<div class="flex flex-col gap-2.5 font-body-sm text-body-sm text-on-surface-variant pt-1">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span class="font-title-sm text-[13px] text-on-surface font-semibold">Level 1 (Supervisor)</span>
+</div>
+<p class="text-[12px] leading-relaxed pl-3.5">
+              Triggered when any citizen grievance exceeds SAKALA statutory resolution timeline by &gt;48 hours AND 2 automated reminders (SMS/IVR) remain unacknowledged by the nodal officer.
+            </p>
+</div>
+<div class="h-px bg-surface-container"></div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-title-sm text-[13px] text-on-surface font-semibold">Level 2 (Department Head &amp; DC)</span>
+</div>
+<p class="text-[12px] leading-relaxed pl-3.5">
+              Triggered when an L1 docket remains unattended for an additional 48 hours (&gt;96h total breach) OR when civic health risk score drops below 35. Transmits summons to Principal Secretary.
+            </p>
+</div>
+<div class="h-px bg-surface-container"></div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-title-sm text-[13px] text-on-surface font-semibold">Grace Period &amp; Exceptions</span>
+</div>
+<p class="text-[12px] leading-relaxed pl-3.5">
+              Emergency water contamination and cold chain vaccine stockouts automatically bypass L1 directly to L2 after 12h.
+            </p>
+</div>
+</div>
+</div>
+<!-- 2. CRITICAL LEGAL SAFEGUARD & ADVISORY DISCLAIMER NOTE -->
+<div class="bg-surface-container rounded-xl p-4 shadow-sm relative overflow-hidden flex flex-col gap-2.5">
+<div class="flex items-start gap-2.5">
+<div class="p-2 rounded-lg bg-surface-container-highest text-primary">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-outline font-bold block">Authority Safeguard</span>
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold leading-tight mt-0.5">
+              Statutory Administrative Routing Notice
+            </h3>
+</div>
+</div>
+<!-- Prominent Quote Callout -->
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<p class="font-title-sm text-title-sm text-on-surface font-semibold leading-snug">
+            “Escalation notifies higher officials only. It does not decide on allegations or legal action.”
+          </p>
+</div>
+<!-- Additional statutory context -->
+<p class="font-body-sm text-[12px] text-on-surface-variant leading-relaxed">
+          Supervisory escalation serves as an administrative routing and compliance acceleration mechanism under Section 12 of the Karnataka Guarantee of Services to Citizens Act. Adjudication of misconduct or financial penal deductions is conducted exclusively by the Sakala Appellate Tribunal through formal Section 14 proceedings.
+        </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Authenticated under Sakala Rules 2012</span>
+</div>
+</div>
+<!-- 3. QUICK SUPERVISORY ACTIONS PANEL -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+          Supervisory Directives
+        </h3>
+<div class="flex flex-col gap-2">
+<button class="w-full flex items-center justify-between p-2.5 rounded-lg bg-error-container hover:bg-error-container/80 text-on-error-container font-title-sm text-title-sm transition-colors text-left group" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-error">campaign</span>
+<span class="leading-tight">Dispatch Multi-Docket Show Cause Notice</span>
+</div>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</button>
+<button class="w-full flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm transition-colors text-left group" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-primary">person_search</span>
+<span class="leading-tight">Request Emergency Nodal Officer Reassignment</span>
+</div>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</button>
+<button class="w-full flex items-center justify-between p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-title-sm text-title-sm transition-colors text-left group" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[20px] text-secondary">file_download</span>
+<span class="leading-tight">Download Escalation Summary for Deputy Commissioner</span>
+</div>
+<span class="material-symbols-outlined text-[18px] transition-transform group-hover:translate-x-0.5">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- 4. RECENT ESCALATION ACTIVITY MINI-LOG -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[20px]">history_toggle_off</span>
+            Today's Audit Trail
+          </h3>
+<span class="font-label-sm text-[11px] text-secondary font-bold">Auto-synced</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Log 1 -->
+<div class="flex items-start gap-2.5 pb-2.5 border-b border-surface-container-low">
+<span class="w-2 h-2 rounded-full bg-error mt-1.5 shrink-0"></span>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-sm text-[13px] text-on-surface font-semibold leading-tight">
+                L2 Summon dispatched to EE Mahadevappa
+              </span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Docket #KA-2025-87402 • 14:22 IST</span>
+<span class="font-label-sm text-[10px] text-outline">Via Automated High-Priority IVR &amp; Sec Dispatch</span>
+</div>
+</div>
+<!-- Log 2 -->
+<div class="flex items-start gap-2.5 pb-2.5 border-b border-surface-container-low">
+<span class="w-2 h-2 rounded-full bg-tertiary mt-1.5 shrink-0"></span>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-sm text-[13px] text-on-surface font-semibold leading-tight">
+                Emergency Cold Chain Bypass Triggered
+              </span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Docket #KA-2025-88194 • 12:05 IST</span>
+<span class="font-label-sm text-[10px] text-outline">Nelamangala THO Dr. B. Shylaja escalated</span>
+</div>
+</div>
+<!-- Log 3 -->
+<div class="flex items-start gap-2.5">
+<span class="w-2 h-2 rounded-full bg-amber-500 mt-1.5 shrink-0"></span>
+<div class="flex flex-col gap-0.5">
+<span class="font-title-sm text-[13px] text-on-surface font-semibold leading-tight">
+                L1 Supervisory Nudge: Shirastedar R. Muniswamy
+              </span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">Docket #KA-2025-79301 • 10:14 IST</span>
+<span class="font-label-sm text-[10px] text-outline">Reminder count incremented to 2</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

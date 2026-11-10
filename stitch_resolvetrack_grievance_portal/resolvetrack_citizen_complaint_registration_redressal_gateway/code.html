@@ -1,0 +1,621 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#00201d", "primary-fixed": "#e2dfff", "on-primary-container": "#a9a7ff", "background": "#f7f9fb", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#eceef0", "inverse-surface": "#2d3133", "surface-bright": "#f7f9fb", "surface-dim": "#d8dadc", "primary-fixed-dim": "#c3c0ff", "tertiary": "#3a0085", "primary": "#1f108e", "surface-tint": "#544fc0", "outline": "#777584", "on-tertiary-fixed-variant": "#5a00c6", "on-background": "#191c1e", "surface-container-highest": "#e0e3e5", "tertiary-container": "#5500bc", "tertiary-fixed": "#eaddff", "surface-container-lowest": "#ffffff", "surface-variant": "#e0e3e5", "on-tertiary-container": "#bf9fff", "tertiary-fixed-dim": "#d2bbff", "surface-container-high": "#e6e8ea", "on-error-container": "#93000a", "on-secondary-container": "#006f66", "secondary-fixed": "#89f5e7", "surface": "#f7f9fb", "on-primary-fixed-variant": "#3b35a7", "surface-container-low": "#f2f4f6", "on-primary": "#ffffff", "on-error": "#ffffff", "inverse-primary": "#c3c0ff", "secondary-fixed-dim": "#6bd8cb", "secondary-container": "#86f2e4", "on-tertiary-fixed": "#25005a", "secondary": "#006a61", "on-surface-variant": "#464553", "on-surface": "#191c1e", "error-container": "#ffdad6", "on-primary-fixed": "#0f0069", "on-secondary-fixed-variant": "#005049", "inverse-on-surface": "#eff1f3", "outline-variant": "#c8c4d5", "error": "#ba1a1a", "primary-container": "#3730a3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2rem", "margin": "2rem", "space-md": "1rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "title-lg": ["Inter"], "label-sm": ["Inter"], "title-md": ["Inter"], "headline-xl": ["Inter"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-8"><div class="flex items-center gap-3"><img alt="ResolveTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xi-OnxUANYIV9Z1K-uS1GPpWOFtkkGi-hhH6BLWfy_JTjoeLDnoZGy9ArD5k-GeRQcxc7yWlDlHf2iPo5TwqAnVNV1U6UEK2Jr3tIupGbc-sXGBH9nkXHJy8ikIIFAj-uJ5xECl6-xXDgP1yUAffWeq9cbjcp27X4mSZfssRY2hB7pSmKdY6GYkXkiW1-xl_1TKJB4GGYSzCkUzmSvttGlkdO7ICLSG_jo_I5P5ISz2Q"><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight">ResolveTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Citizen Public Portal</span></div></div><nav class="hidden lg:flex items-center gap-6" data-active-classes="text-primary font-title-sm underline decoration-2 underline-offset-8"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="file-complaint" href="#">File Complaint</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="track-grievance" href="#">Track Grievance</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="citizen-charter" href="#">Citizen Charter</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="faq-and-helpline" href="#">FAQ &amp; Helpline</a></nav></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-2 bg-secondary-container text-on-secondary-container px-3 py-1.5 rounded-lg"><span class="material-symbols-outlined text-[18px]">support_agent</span><span class="font-label-md text-label-md font-semibold">Toll-Free 1902</span></div><div class="bg-surface-container p-1 rounded-lg flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" type="button">English</button><button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">ಕನ್ನಡ</button></div><a class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-colors flex items-center gap-1.5" data-path="citizen-login" href="#"><span class="">Sign In / Register</span></a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQctWSVR_NfhxSinxny_kEMx8rUA6qaPnrvqCdyZh7pRlPmjCi3nWUrSpGsMlFOy-7QmTqBOkVPDzR-cpVw8WPBUHuC-N0-tWBimG6JpWIiizJUzSN5IkDoGuHGga0fg1uA87jhpNHiW_comCrnHffGKpqVIHBXR0r5DDeCDTQFbH3gW_DSK7nGC_QHlr0Z8sr_TfNMNvRGDwIknl13tVoF_hC912fH9D46M2uILlu"></div></div></header><main class="w-full pt-16 bg-background px-space-lg min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Portal Context Header -->
+<section class="w-full pt-4 pb-6">
+<div class="flex flex-col gap-3">
+<!-- Breadcrumb & Badges -->
+<div class="flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">gavel</span>
+<span class="">e-Janaspandana</span>
+<span class="">/</span>
+<span class="text-primary font-semibold">Grievance Registration</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant">ಹೊಸ ಅರ್ಜಿ ನೋಂದಣಿ</span>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+            SAKALA Act 2011 Protected
+          </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">fast_forward</span>
+            Automated Multi-Tier Escalation
+          </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            24x7 Digital Intake
+          </span>
+</div>
+</div>
+<!-- Hero Headline & Subtitle -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mt-1">
+<div class="max-w-3xl">
+<p class="font-label-md text-label-md text-primary uppercase tracking-wider font-semibold">
+            ಕರ್ನಾಟಕ ಸಾರ್ವಜನಿಕ ಕುಂದುಕೊರತೆ ನೋಂದಣಿ | Karnataka Sakala Citizen Grievance Portal
+          </p>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mt-1 tracking-tight">
+            Register a Grievance with Guaranteed Time-Bound Resolution
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Enforced under the Karnataka Guarantee of Services to Citizens Act. Every grievance is digitally stamped, auto-routed to competent authorities, and subjected to statutory daily default penalties.
+          </p>
+</div>
+<!-- Quick Assistance Card Pill -->
+<div class="flex items-center gap-3 bg-surface-container-lowest p-3 rounded-xl shadow-sm self-start md:self-auto">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">record_voice_over</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Toll-Free Helpline</span>
+<span class="font-title-sm text-title-sm text-primary font-bold">1902 / 080-22032582</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5-Step Visual Stepper Bar -->
+<section class="w-full mb-8">
+<div class="bg-surface-container-lowest rounded-xl p-4 sm:p-5 shadow-sm">
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+<!-- Step 1: Active -->
+<div class="flex items-center gap-3 relative">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-title-sm text-title-sm font-bold shadow-sm shrink-0 ring-4 ring-primary-fixed">
+            1
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Step 1</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate">Grievance Info</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">ದೂರಿನ ವಿವರ</span>
+</div>
+</div>
+<!-- Step 2: Location -->
+<div class="flex items-center gap-3 relative">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-title-sm text-title-sm font-bold shrink-0">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Step 2</span>
+<span class="font-title-sm text-title-sm text-on-surface truncate">Location &amp; Ward</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">ಸ್ಥಳ ಮತ್ತು ವಾರ್ಡ್</span>
+</div>
+</div>
+<!-- Step 3: Citizen -->
+<div class="flex items-center gap-3 relative">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-title-sm text-title-sm font-bold shrink-0">
+            3
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Step 3</span>
+<span class="font-title-sm text-title-sm text-on-surface-variant truncate">Citizen KYC</span>
+<span class="font-label-sm text-label-sm text-outline truncate">ಅರ್ಜಿದಾರರ ಮಾಹಿತಿ</span>
+</div>
+</div>
+<!-- Step 4: Documents -->
+<div class="flex items-center gap-3 relative">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-title-sm text-title-sm font-bold shrink-0">
+            4
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Step 4</span>
+<span class="font-title-sm text-title-sm text-on-surface-variant truncate">Evidence Upload</span>
+<span class="font-label-sm text-label-sm text-outline truncate">ದಾಖಲೆಗಳು</span>
+</div>
+</div>
+<!-- Step 5: Submit -->
+<div class="flex items-center gap-3 relative col-span-2 sm:col-span-1">
+<div class="w-9 h-9 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-title-sm text-title-sm font-bold shrink-0">
+            5
+          </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Step 5</span>
+<span class="font-title-sm text-title-sm text-on-surface-variant truncate">Review &amp; Token</span>
+<span class="font-label-sm text-label-sm text-outline truncate">ಪರಿಶೀಲಿಸಿ</span>
+</div>
+</div>
+</div>
+<!-- Segmented Bar line -->
+<div class="w-full bg-surface-container h-1.5 rounded-full mt-4 overflow-hidden">
+<div class="bg-gradient-to-r from-primary-container via-primary to-secondary h-full rounded-full transition-all duration-500" style="width: 45%;"></div>
+</div>
+</div>
+</section>
+<!-- Main 2-Column Responsive Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- LEFT COLUMN: Interactive Intake Form (~68% on Desktop) -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- Friendly Notice Banner -->
+<div class="bg-secondary-container/30 rounded-xl p-4 flex items-start gap-3 shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-secondary font-bold">
+            Automated Routing &amp; Statutory SLA Protection
+          </span>
+<p class="font-body-sm text-body-sm text-on-surface mt-0.5">
+            💡 Our AI intake engine automatically identifies the competent municipality, board, or department based on your narrative. An officer will be legally bound to acknowledge and commence remediation within official SAKALA timelines.
+          </p>
+</div>
+</div>
+<!-- FORM CARD: Primary Intake Details -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-7 shadow-sm flex flex-col gap-6">
+<!-- Section Header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-primary-fixed text-primary flex items-center justify-center font-title-sm text-title-sm font-bold">1</span>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Grievance Particulars</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ಕುಂದುಕೊರತೆಯ ಪ್ರಾಥಮಿಕ ವಿವರಗಳು</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-error font-medium">* Mandatory Statutory Fields</span>
+</div>
+<!-- Complaint Title Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface flex items-center justify-between" for="complaint-title">
+<span class="">Subject / Grievance Summary <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ವಿಷಯದ ಶೀರ್ಷಿಕೆ</span>
+</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="complaint-title" placeholder="Summarize the issue briefly..." type="text" value="Frequent raw sewage overflow and contaminated tap water supply in layout">
+</div>
+<!-- Two Col: Category & Urgency -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<!-- Category Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface flex items-center justify-between" for="category-select">
+<span class="">Category (ವರ್ಗ) <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">AI Detected</span>
+</label>
+<div class="relative">
+<select class="w-full appearance-none px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container pr-10" id="category-select">
+<option selected="" value="water">Water Supply &amp; Contamination (BWSSB / Kuwsdb)</option>
+<option value="road">Road Damage &amp; Potholes (BBMP / PWD)</option>
+<option value="streetlight">Streetlight &amp; Electrical Hazards (BESCOM)</option>
+<option value="traffic">Traffic Congestion &amp; Signals</option>
+<option value="safety">Public Safety &amp; Encroachment</option>
+<option value="cyber">Cybercrime &amp; Online Fraud</option>
+<option value="lost">Lost Property &amp; Certificates</option>
+<option value="other">Other Public Infrastructure Grievance</option>
+</select>
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant absolute right-3 top-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Urgency Level -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface flex items-center justify-between">
+<span class="">Public Health / Impact Severity <span class="text-error">*</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ತುರ್ತು ಮಟ್ಟ</span>
+</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high transition-colors text-center">
+<input class="sr-only" name="severity" type="radio" value="routine">
+<span class="">Routine</span>
+</label>
+<label class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-label-md cursor-pointer hover:bg-surface-container-high transition-colors text-center">
+<input class="sr-only" name="severity" type="radio" value="priority">
+<span class="">Priority</span>
+</label>
+<label class="flex items-center justify-center gap-1.5 p-2 rounded-lg bg-error-container text-on-error-container font-label-md text-label-md font-semibold cursor-pointer shadow-sm text-center">
+<input checked="" class="sr-only" name="severity" type="radio" value="critical">
+<span class="material-symbols-outlined text-[16px]">emergency</span>
+<span class="">Critical Risk</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Detailed Description with Kannada Voice Dictation -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-title-sm text-title-sm text-on-surface" for="complaint-desc">
+              Detailed Narrative &amp; Prior Complaint References <span class="text-error">*</span>
+</label>
+<!-- Voice Dictation Button -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-secondary text-on-secondary font-label-sm text-label-sm hover:opacity-90 transition-opacity shadow-sm" onclick="alert('ಮೈಕ್ರೊಫೋನ್ ಸಕ್ರಿಯವಾಗಿದೆ. ಮಾತನಾಡಿ... (Microphone Active: Speak now in Kannada or English)')" type="button">
+<span class="material-symbols-outlined text-[16px]">mic</span>
+<span class="">ಧ್ವನಿ ಮೂಲಕ ನಮೂದಿಸಿ | Speak to Type</span>
+</button>
+</div>
+<div class="relative">
+<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container leading-relaxed" id="complaint-desc" placeholder="Provide exact landmarks, duration of issue, and previous ticket numbers if any..." rows="4">For the past 4 days, sewage from the main municipal trunk line has been leaking into the Cauvery drinking water underground sump near 4th Cross. The tap water smells strongly of raw drainage, posing severe dysentery risk to 42 households in our street. Two children have already fallen sick.</textarea>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span class="">Kannada &amp; English bilingual script supported.</span>
+<span class="">264 / 1,500 characters</span>
+</div>
+</div>
+</div>
+<!-- FORM CARD 2: Location & Geo-Tagging -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-7 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-primary-fixed text-primary flex items-center justify-center font-title-sm text-title-sm font-bold">2</span>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Incident Location &amp; Jurisdiction Mapping</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ಘಟನಾ ಸ್ಥಳ ಮತ್ತು ವ್ಯಾಪ್ತಿ</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold hover:opacity-90 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">my_location</span>
+            Auto-Detect GPS Location
+          </button>
+</div>
+<!-- Address input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="address-field">
+            Street Address &amp; Nearest Landmark <span class="text-error">*</span>
+</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="address-field" type="text" value="Cross No. 4, Opposite Govt Primary School, 8th Main, Vidyaranyapura, Bengaluru">
+</div>
+<!-- District, Taluk, Ward Selector Triple -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="district-select">District (ಜಿಲ್ಲೆ)</label>
+<div class="relative">
+<select class="w-full appearance-none px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="district-select">
+<option selected="">Bengaluru Urban</option>
+<option>Bengaluru Rural</option>
+<option>Mysuru</option>
+<option>Dharwad</option>
+<option>Dakshina Kannada</option>
+<option>Kalaburagi</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-3 top-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="taluk-select">Taluk / Zone (ತಾಲ್ಲೂಕು)</label>
+<div class="relative">
+<select class="w-full appearance-none px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="taluk-select">
+<option selected="">Bengaluru North / Yelahanka</option>
+<option>Bengaluru South</option>
+<option>Bengaluru East</option>
+<option>Anekal</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-3 top-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="ward-select">Municipal Ward / Grama (ವಾರ್ಡ್)</label>
+<div class="relative">
+<select class="w-full appearance-none px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="ward-select">
+<option selected="">Ward 08 - Vidyaranyapura</option>
+<option>Ward 09 - Byatarayanapura</option>
+<option>Ward 10 - Kodigehalli</option>
+<option>Ward 11 - Kuvempu Nagar</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-3 top-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Interactive Map Visual Container -->
+<div class="relative w-full rounded-xl overflow-hidden bg-surface-container shadow-sm">
+<!-- Real Static Map Trigger with Lat/Long Coordinates -->
+<div class="w-full h-56 bg-cover bg-center" data-location="Vidyaranyapura, Bengaluru, Karnataka, India" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDceb-Su-bSLijzUicUo1p7f-BFwPs-Dr6Ck9pEuESZBdytWVv8rrTnomieoyXW5osfmm8WRKlyp8BmxFYUZZOEvo0wQVNDR42SHTqe56ibp6WWk2EEztG_L-VcJA6WFYVaOD0tNMDCjwDZalNIpumUqNcKfhQT1495FkKlp5sImznwAbZ4PgQi1HZh6GSzqO7uEGFBbmaa63t2Fl33SmyECjwaX9CCEynkjioLoCtF')"></div>
+<!-- Map Overlay Badges -->
+<div class="absolute top-3 left-3 bg-inverse-surface/90 backdrop-blur-md text-inverse-on-surface px-3 py-1.5 rounded-lg flex items-center gap-2 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">pin_drop</span>
+<span class="font-mono">13.0827° N, 77.5458° E</span>
+<span class="text-secondary-fixed">• Accuracy ±3.5m</span>
+</div>
+<div class="absolute bottom-3 right-3 flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm shadow-sm font-semibold">
+              KGIS Karnataka Cadastral Layer Active
+            </span>
+</div>
+</div>
+</div>
+<!-- FORM CARD 3: Citizen KYC & Notifications -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-7 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-primary-fixed text-primary flex items-center justify-center font-title-sm text-title-sm font-bold">3</span>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Complainant Information</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ಅರ್ಜಿದಾರರ ಗುರುತು ಮತ್ತು ಸಂವಹನ</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+            Aadhaar / Mobile Authenticated
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<!-- Citizen Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="citizen-name">Complainant Full Name (ಹೆಸರು) <span class="text-error">*</span></label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="citizen-name" type="text" value="Smt. Roopa Kulkarni">
+</div>
+<!-- Mobile Phone + OTP Badge -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface flex items-center justify-between" for="mobile-number">
+<span class="">Mobile Number for SMS Alerts <span class="text-error">*</span></span>
+<span class="text-secondary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> OTP Verified
+              </span>
+</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="mobile-number" type="tel" value="+91 98451 20492">
+</div>
+<!-- Email (Optional) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface" for="citizen-email">Email ID (ಐಚ್ಛಿಕ - e-Dossier dispatch)</label>
+<input class="w-full px-4 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container" id="citizen-email" type="email" value="roopa.kulkarni@gmail.com">
+</div>
+<!-- Language Preference -->
+<div class="flex flex-col gap-1.5">
+<label class="font-title-sm text-title-sm text-on-surface">Language of Official Redressal Orders</label>
+<div class="flex items-center gap-3 pt-1">
+<label class="inline-flex items-center gap-2 cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4" name="lang_pref" type="radio">
+<span class="font-body-md text-body-md text-on-surface">English &amp; Kannada (ದ್ವಿಭಾಷಾ)</span>
+</label>
+<label class="inline-flex items-center gap-2 cursor-pointer">
+<input class="accent-primary w-4 h-4" name="lang_pref" type="radio">
+<span class="font-body-md text-body-md text-on-surface">ಕನ್ನಡ ಮಾತ್ರ (Kannada Only)</span>
+</label>
+</div>
+</div>
+</div>
+<!-- Notification Channels -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-wrap items-center justify-between gap-4">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Real-Time Grievance Milestone Alerts:</span>
+<div class="flex items-center gap-5">
+<label class="inline-flex items-center gap-2 cursor-pointer">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">SMS (Free Gov. of Karnataka)</span>
+</label>
+<label class="inline-flex items-center gap-2 cursor-pointer">
+<input checked="" class="accent-secondary w-4 h-4 rounded" type="checkbox">
+<span class="font-body-sm text-body-sm text-on-surface">WhatsApp Status Updates</span>
+</label>
+</div>
+</div>
+</div>
+<!-- FORM CARD 4: Document & Visual Evidence -->
+<div class="bg-surface-container-lowest rounded-xl p-6 sm:p-7 shadow-sm flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-lg bg-primary-fixed text-primary flex items-center justify-center font-title-sm text-title-sm font-bold">4</span>
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">Supporting Evidence &amp; Visual Verification</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant">ಸಾಕ್ಷ್ಯಾಧಾರ ದಾಖಲೆಗಳು ಮತ್ತು ಛಾಯಾಚಿತ್ರಗಳು</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Max 25 MB (JPG, PNG, PDF, MP4)</span>
+</div>
+<!-- Drag & Drop Zone -->
+<div class="p-8 rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col items-center justify-center gap-3 text-center cursor-pointer">
+<div class="w-14 h-14 rounded-full bg-primary-fixed text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">
+              Drag &amp; drop incident photos, video clips, or PDF documents here
+            </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+              Direct EXIF geo-tags from mobile cameras will speed up field team dispatch.
+            </span>
+</div>
+<button class="mt-1 px-4 py-2 rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-sm hover:bg-surface-container-high transition-colors" type="button">
+            Browse Files from Device (ಫೈಲ್ ಆಯ್ಕೆಮಾಡಿ)
+          </button>
+</div>
+<!-- Uploaded Evidence Chips -->
+<div class="flex flex-col gap-2.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">
+            Attached Files (3 Ready for Dispatch)
+          </span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<!-- File 1 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-secondary text-[22px]">image</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate font-medium">sewage_water_sample.jpg</span>
+<span class="font-label-sm text-label-sm text-secondary truncate">1.8 MB • EXIF GPS Verified</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Remove attachment" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- File 2 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px]">picture_as_pdf</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate font-medium">medical_prescription.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">640 KB • Document</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Remove attachment" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- File 3 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[22px]">draw</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate font-medium">resident_association_letter.pdf</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">1.1 MB • Signed</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-error transition-colors p-1" title="Remove attachment" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Navigation Buttons -->
+<div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+<button class="px-5 py-2.5 rounded-lg bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span class="">Save as Draft (ಕರಡು ಉಳಿಸಿ)</span>
+</button>
+<div class="flex items-center gap-3">
+<button class="px-5 py-2.5 rounded-lg bg-surface-container text-on-surface-variant font-label-lg text-label-lg hover:bg-surface-container-high transition-colors" type="button">
+            Previous Step
+          </button>
+<!-- Primary CTA Button that reveals modal -->
+<button class="px-7 py-3 rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg font-bold shadow-md hover:bg-primary transition-all flex items-center gap-2 transform active:scale-95" onclick="document.getElementById('confirmation-modal').classList.remove('hidden')" type="button">
+<span class="">Review &amp; Submit Grievance</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Sticky AI Routing Intelligence & SAKALA Guarantees (~32% on Desktop) -->
+<div class="lg:col-span-4 flex flex-col gap-6 lg:sticky lg:top-20">
+<!-- AI Live Recommendation Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-5 sm:p-6 shadow-sm relative overflow-hidden">
+<!-- Subtle Teal Top Accent Ribbon -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-secondary via-primary-container to-secondary"></div>
+<!-- Header -->
+<div class="flex items-center justify-between pb-4">
+<div class="flex items-center gap-2.5">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">AI Routing Engine</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ನೈಜ-ಸಮಯದ ಇಲಾಖೆ ಶಿಫಾರಸು</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">psychology</span>
+            96% Match
+          </span>
+</div>
+<!-- Recommended Authority Card -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 font-bold font-title-md">
+<span class="material-symbols-outlined text-[24px]">water_drop</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Designated Primary Authority</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-tight mt-0.5">
+                BWSSB (Bangalore Water Supply and Sewerage Board)
+              </h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+                ಬೆಂಗಳೂರು ಜಲಮಂಡಳಿ
+              </p>
+</div>
+</div>
+<div class="pt-2 flex flex-col gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">apartment</span>
+<span class=""><strong>Sub-Division:</strong> Yelahanka Division • Ward 08 Unit</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">person</span>
+<span class=""><strong>First Redressal Officer:</strong> Asst. Executive Engineer (AEE)</span>
+</div>
+</div>
+</div>
+<!-- Extracted Semantic Keywords -->
+<div class="mt-4 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Matched Semantic Indicators</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">#sewage_overflow</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">#contaminated_tap_water</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">#Cauvery_sump</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">#Vidyaranyapura_W08</span>
+</div>
+</div>
+<!-- Statutory SAKALA SLA Box -->
+<div class="mt-5 p-4 rounded-xl bg-surface-container-high/60 flex flex-col gap-2">
+<div class="flex items-center gap-2 text-primary font-title-sm text-title-sm font-bold">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+<span class="">Statutory SLA: Guaranteed 48h</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Per Sakala Services Act 2011 Schedule II, sewage leakages affecting domestic drinking lines must be physically verified and contained within 48 hours.
+          </p>
+</div>
+<!-- Multi-Tier Automatic Escalation Chain -->
+<div class="mt-5 flex flex-col gap-3">
+<span class="font-label-sm text-label-sm text-on-surface uppercase font-bold tracking-wider">
+            Automated Escalation Matrix (ಸ್ವಯಂಚಾಲಿತ ಹಂತಗಳು)
+          </span>
+<div class="flex flex-col gap-2.5 font-label-sm text-label-sm">
+<!-- Tier 1 -->
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">T1</span>
+<div>
+<span class="font-semibold text-on-surface">Sub-Divisional AEE</span>
+<span class="text-on-surface-variant"> — 0 to 48 Hours</span>
+</div>
+</div>
+<!-- Tier 2 -->
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-primary-fixed text-on-primary-fixed-variant flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">T2</span>
+<div>
+<span class="font-semibold text-on-surface">Chief Engineer (North Region)</span>
+<span class="text-on-surface-variant"> — Day 3 Auto-Escalation</span>
+</div>
+</div>
+<!-- Tier 3 -->
+<div class="flex items-start gap-2.5">
+<span class="w-5 h-5 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-bold text-[10px] shrink-0 mt-0.5">T3</span>
+<div>
+<span class="font-semibold text-on-surface">District Deputy Commissioner &amp; Sakala Appellate</span>
+<span class="text-on-surface-variant"> — Day 7 (Default Officer Penalties Invoked)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Trust & Transparency Info Card -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div>
+<h4 class="font-title-sm text-title-sm text-on-surface font-bold">Zero Rejection without Justification</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Karnataka Transparency Charter</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          No civic body can reject an online grievance without a signed digital report, site photographs, and geo-tagged remediation evidence.
+        </p>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Need help filing?</span>
+<a class="text-primary font-semibold hover:underline flex items-center gap-1" href="#">
+<span class="">Call 1902 Assistant</span>
+<span class="material-symbols-outlined text-[14px]">call</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- POST-SUBMIT SUCCESS MODAL OVERLAY (Initially Hidden, Toggleable via Review & Submit) -->
+
+</div>
+<script>
+  // Simple micro-interactions for Urgency pill selection
+  document.querySelectorAll('input[name="severity"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+      document.querySelectorAll('input[name="severity"]').forEach(r => {
+        const parent = r.closest('label');
+        parent.classList.remove('bg-error-container', 'text-on-error-container', 'bg-primary-container', 'text-on-primary', 'shadow-sm');
+        parent.classList.add('bg-surface-container', 'text-on-surface-variant');
+      });
+      const activeLabel = this.closest('label');
+      activeLabel.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      if (this.value === 'critical') {
+        activeLabel.classList.add('bg-error-container', 'text-on-error-container', 'shadow-sm');
+      } else {
+        activeLabel.classList.add('bg-primary-container', 'text-on-primary', 'shadow-sm');
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low py-10 mt-12 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full px-space-lg flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><span class="font-title-sm text-title-sm text-on-surface">Centre for e-Governance, Government of Karnataka</span><span class="font-body-sm text-body-sm text-on-surface-variant">Integrated Public Grievance Redressal and Monitoring System (IPGRMS)</span></div><div class="flex items-center gap-6 text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Terms of Use</a><a class="hover:text-on-surface transition-colors" href="#">SLA Guidelines</a><a class="hover:text-on-surface transition-colors" href="#">Helpdesk</a></div><div class="text-on-surface-variant font-label-sm text-label-sm">© 2025 ResolveTrack Karnataka. All Rights Reserved.</div></div></footer>
+
+</body></html>

@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-gray-900;
+    font-family: 'Inter', 'Noto Sans Kannada', sans-serif;
+  }
+
+  /* Ensure Kannada conjunct vowels and diacritics render clearly without clipping */
+  [lang="kn"], .font-kannada {
+    font-family: 'Noto Sans Kannada', 'Inter', sans-serif;
+    line-height: 1.6;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.material-symbols-outlined.fill {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+

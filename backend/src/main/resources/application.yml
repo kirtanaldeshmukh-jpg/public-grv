@@ -1,0 +1,57 @@
+server:
+  port: ${SERVER_PORT:8080}
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: resolvetrack-backend
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:dev}
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 25MB
+
+  datasource:
+    url: jdbc:mysql://${DB_HOST:localhost}:${DB_PORT:3306}/${DB_NAME:resolvetrack_db}?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&createDatabaseIfNotExist=true
+    username: ${DB_USERNAME:resolvetrack_user}
+    password: ${DB_PASSWORD:resolvetrack_pass}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 30000
+      connection-timeout: 20000
+      max-lifetime: 1800000
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+    locations: classpath:db/migration
+
+resolvetrack:
+  jwt:
+    secret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+    expiration-ms: ${JWT_EXPIRATION_MS:86400000} # 24 hours
+  scheduling:
+    reminder-cron: ${REMINDER_CRON:0 0 9 * * *}     # Daily at 9:00 AM
+    escalation-cron: ${ESCALATION_CRON:0 0 */4 * * *} # Every 4 hours
+
+logging:
+  level:
+    root: INFO
+    com.resolvetrack: DEBUG
+    org.springframework.security: INFO
+

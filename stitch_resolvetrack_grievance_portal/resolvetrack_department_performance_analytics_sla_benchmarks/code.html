@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-fixed": "#00201d", "primary-fixed": "#e2dfff", "on-primary-container": "#a9a7ff", "background": "#f7f9fb", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "surface-container": "#eceef0", "inverse-surface": "#2d3133", "surface-bright": "#f7f9fb", "surface-dim": "#d8dadc", "primary-fixed-dim": "#c3c0ff", "tertiary": "#3a0085", "primary": "#1f108e", "surface-tint": "#544fc0", "outline": "#777584", "on-tertiary-fixed-variant": "#5a00c6", "on-background": "#191c1e", "surface-container-highest": "#e0e3e5", "tertiary-container": "#5500bc", "tertiary-fixed": "#eaddff", "surface-container-lowest": "#ffffff", "surface-variant": "#e0e3e5", "on-tertiary-container": "#bf9fff", "tertiary-fixed-dim": "#d2bbff", "surface-container-high": "#e6e8ea", "on-error-container": "#93000a", "on-secondary-container": "#006f66", "secondary-fixed": "#89f5e7", "surface": "#f7f9fb", "on-primary-fixed-variant": "#3b35a7", "surface-container-low": "#f2f4f6", "on-primary": "#ffffff", "on-error": "#ffffff", "inverse-primary": "#c3c0ff", "secondary-fixed-dim": "#6bd8cb", "secondary-container": "#86f2e4", "on-tertiary-fixed": "#25005a", "secondary": "#006a61", "on-surface-variant": "#464553", "on-surface": "#191c1e", "error-container": "#ffdad6", "on-primary-fixed": "#0f0069", "on-secondary-fixed-variant": "#005049", "inverse-on-surface": "#eff1f3", "outline-variant": "#c8c4d5", "error": "#ba1a1a", "primary-container": "#3730a3" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-xl": "2rem", "margin": "2rem", "space-md": "1rem", "margin-mobile": "1rem", "space-lg": "1.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem" }, "fontFamily": { "headline-lg-mobile": ["Inter"], "headline-md": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "title-sm": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "headline-xl-mobile": ["Inter"], "title-lg": ["Inter"], "label-sm": ["Inter"], "title-md": ["Inter"], "headline-xl": ["Inter"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "headline-lg": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-lg": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-xl": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "700" }] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-72 bg-surface-container-low z-40 flex flex-col justify-between py-6 px-4 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-6"><div class="flex items-center gap-3 px-3"><img alt="ResolveTrack Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Xi-OnxUANYIV9Z1K-uS1GPpWOFtkkGi-hhH6BLWfy_JTjoeLDnoZGy9ArD5k-GeRQcxc7yWlDlHf2iPo5TwqAnVNV1U6UEK2Jr3tIupGbc-sXGBH9nkXHJy8ikIIFAj-uJ5xECl6-xXDgP1yUAffWeq9cbjcp27X4mSZfssRY2hB7pSmKdY6GYkXkiW1-xl_1TKJB4GGYSzCkUzmSvttGlkdO7ICLSG_jo_I5P5ISz2Q"/><div class="flex flex-col"><span class="font-title-md text-title-md text-primary tracking-tight">ResolveTrack</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Govt. of Karnataka</span></div></div><div class="px-3 py-2 rounded-xl bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-md text-label-md text-on-surface">District Command</span></div><span class="font-label-sm text-label-sm bg-surface-container-highest text-on-surface-variant px-2 py-0.5 rounded-full">Zone 04</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-title-sm rounded-xl"><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="complaints" href="#"><span class="material-symbols-outlined text-[20px]">assignment</span><span>Complaints</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="reminder-centre" href="#"><span class="material-symbols-outlined text-[20px]">schedule</span><span>Reminder Centre</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="escalation-centre" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span>Escalation Centre</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="action-history" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Action History</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="departments" href="#"><span class="material-symbols-outlined text-[20px]">apartment</span><span>Departments</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-label-lg text-label-lg" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span>Settings</span></a></nav></div><div class="flex flex-col gap-3 px-3"><div class="p-3 rounded-xl bg-surface-container-high flex flex-col gap-1"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant">SLA Resolution Target</span><span class="font-label-sm text-label-sm text-secondary font-semibold">92.4%</span></div><div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden"><div class="bg-secondary h-full rounded-full w-[92%]"></div></div></div><div class="flex items-center justify-between text-on-surface-variant"><span class="font-label-sm text-label-sm">Portal Build v3.4.1</span><span class="font-label-sm text-label-sm text-on-surface-variant">NIC Karnataka</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 z-30 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1"><div class="hidden xl:flex items-center gap-2 bg-error-container text-on-error-container px-3 py-1.5 rounded-lg"><span class="material-symbols-outlined text-[18px] text-error">campaign</span><span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-error">EMERGENCY SOS:</span><span class="font-body-sm text-body-sm truncate max-w-md text-on-error-container">3 Taluk level drinking water grievances crossed Tier-3 deadline</span></div></div><div class="flex items-center gap-space-md"><div class="bg-surface-container p-1 rounded-lg flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" type="button">English</button><button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">ಕನ್ನಡ</button></div><div class="relative flex items-center justify-center p-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface cursor-pointer transition-colors"><span class="material-symbols-outlined">notifications</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-error text-on-error rounded-full font-label-sm text-[10px] flex items-center justify-center font-bold">14</span></div><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-3 pl-1"><div class="text-right hidden sm:flex flex-col"><span class="font-title-sm text-title-sm text-on-surface leading-tight">Dr. S. K. Nandeesh, IAS</span><span class="font-label-sm text-label-sm text-on-surface-variant">District Deputy Commissioner</span></div><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-tint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQctWSVR_NfhxSinxny_kEMx8rUA6qaPnrvqCdyZh7pRlPmjCi3nWUrSpGsMlFOy-7QmTqBOkVPDzR-cpVw8WPBUHuC-N0-tWBimG6JpWIiizJUzSN5IkDoGuHGga0fg1uA87jhpNHiW_comCrnHffGKpqVIHBXR0r5DDeCDTQFbH3gW_DSK7nGC_QHlr0Z8sr_TfNMNvRGDwIknl13tVoF_hC912fH9D46M2uILlu"/></div></div></div></header><main class="w-full pt-16 bg-background px-space-lg py-space-lg min-h-screen"><div class="flex flex-col w-full">
+<!-- Privacy & Regulatory Safeguard Bar -->
+<div class="mb-4 flex flex-wrap items-center justify-between gap-3 px-4 py-2.5 rounded-xl bg-surface-container shadow-sm">
+<div class="flex items-center gap-2.5 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-title-sm text-title-sm text-on-surface">Privacy &amp; Governance Safeguard:</span>
+<span>Aggregated Telemetry Only • Zero Citizen PII Ingested • Anonymized Actuarial Records (KGSC Act § 9)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+        SAKALA Telemetry Live
+      </span>
+<span class="text-on-surface-variant text-[11px] font-label-sm font-mono">Sync: 14:32:08 IST (NIC-BLR-04)</span>
+</div>
+</div>
+<!-- Header & Executive Controls Strip -->
+<div class="mb-6 flex flex-col xl:flex-row xl:items-end justify-between gap-6 pb-2">
+<div class="max-w-4xl flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-bold tracking-wider uppercase">District Command • Zone 04</span>
+<span class="text-on-surface-variant font-title-sm text-title-sm font-normal text-slate-500">ಬೆಂಗಳೂರು ನಗರ ಮತ್ತು ಉಪನಗರ ವಲಯ</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-primary tracking-tight">
+        Department Performance Analytics &amp; Statutory Benchmarks
+      </h1>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+        Aggregate statutory resolution metrics, department SLA compliance, escalation velocities, and sub-division workload distribution under the Karnataka Guarantee of Services to Citizens (SAKALA) Act. (ಇಲಾಖಾ ಕಾರ್ಯಕ್ಷಮತೆ ಮತ್ತು ಶಾಸನಬದ್ಧ ಗಡುವು ವಿಶ್ಲೇಷಣೆ).
+      </p>
+</div>
+<!-- Global Controls & Exports -->
+<div class="flex flex-wrap items-center gap-2.5 shrink-0">
+<div class="flex items-center bg-surface-container-high p-1 rounded-xl shadow-inner">
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">7D</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-title-sm text-title-sm shadow-sm transition-all" type="button">Last 30 Days</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">Q3 TD</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">FY 2025-26</button>
+</div>
+<div class="relative">
+<button class="flex items-center gap-2 px-3 py-2 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-colors font-label-md text-label-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">filter_alt</span>
+<span class="font-semibold">Zone 04 (Bengaluru Urban &amp; Peri)</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">expand_more</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-lowest text-on-surface hover:text-primary shadow-sm hover:shadow transition-all font-label-md text-label-md" title="Refresh Live Data Feed" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync</span>
+<span class="hidden sm:inline">Refresh</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary text-on-primary font-title-sm text-title-sm shadow-md hover:bg-primary-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Audit Report</span>
+</button>
+</div>
+</div>
+<!-- Row of 5 Core KPI Metric Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4 mb-6">
+<!-- Card 1: Average Resolution Time -->
+<div class="relative overflow-hidden p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-secondary"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Average Resolution</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">ಸರಾಸರಿ ಪರಿಹಾರ ಸಮಯ</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">timer</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">38.4<span class="text-title-lg font-title-lg font-normal text-on-surface-variant">h</span></span>
+<span class="inline-flex items-center text-[12px] font-title-sm text-secondary font-bold">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> 18.2%
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between">
+<span>Target SAKALA SLA: <span class="font-semibold text-on-surface">48h</span></span>
+<span class="text-secondary font-semibold">Under SLA</span>
+</p>
+</div>
+<!-- Mini Sparkline SVG -->
+<div class="mt-3 pt-2">
+<svg class="w-full h-7 text-secondary/30" fill="none" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0,20 Q15,16 30,18 T60,8 T80,12 T100,4" stroke="currentColor" stroke-width="2" vector-effect="non-scaling-stroke"></path>
+<path d="M0,20 Q15,16 30,18 T60,8 T80,12 T100,4 L100,24 L0,24 Z" fill="currentColor" fill-opacity="0.15"></path>
+<circle cx="100" cy="4" fill="currentColor" r="2.5" stroke="#fff" stroke-width="1.5"></circle>
+</svg>
+</div>
+</div>
+<!-- Card 2: Overdue Percentage -->
+<div class="relative overflow-hidden p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-amber-500"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Overdue Percentage</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">ಗಡುವು ಮೀರಿದ ಶೇಕಡಾವಾರು</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-amber-500/10 flex items-center justify-center text-amber-600">
+<span class="material-symbols-outlined text-[20px]">warning_amber</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">6.8<span class="text-title-lg font-title-lg font-normal text-on-surface-variant">%</span></span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-label-sm font-label-sm font-semibold">Compliant</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Threshold: <span class="font-semibold text-on-surface">&lt;8.0%</span> • 41 / 604 dockets
+        </p>
+</div>
+<div class="mt-3 pt-2">
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-amber-500 h-full rounded-full" style="width: 34%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-on-surface-variant mt-1.5">
+<span>Current: 6.8%</span>
+<span>Max cap: 8.0%</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Pending Complaints -->
+<div class="relative overflow-hidden p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Active Pending Dockets</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">ಪ್ರಸ್ತುತ ಬಾಕಿ ದೂರುಗಳು</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">186</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">In Pipeline</span>
+</div>
+<div class="grid grid-cols-3 gap-1 py-1 mt-1 text-center bg-surface-container-low rounded-lg">
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-primary font-bold">112</span>
+<span class="text-[10px] font-label-sm text-on-surface-variant">Field Triage</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">48</span>
+<span class="text-[10px] font-label-sm text-on-surface-variant">Inspection</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-sm text-title-sm text-secondary font-bold">26</span>
+<span class="text-[10px] font-label-sm text-on-surface-variant">ATR Signoff</span>
+</div>
+</div>
+</div>
+<div class="mt-2 text-[11px] font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">sync_saved_locally</span>
+<span>Median wait-time: 14.1 hours</span>
+</div>
+</div>
+<!-- Card 4: Escalation Count -->
+<div class="relative overflow-hidden p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Tiered Escalations</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">ಹೆಚ್ಚುವರಿ ಮೇಲ್ಮನವಿಗಳು</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">upgrade</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">24</span>
+<span class="px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 text-label-sm font-label-sm font-semibold">Active Escalation</span>
+</div>
+<div class="flex flex-col gap-1 text-[11px] font-label-sm text-on-surface-variant mt-1.5">
+<div class="flex justify-between items-center">
+<span>Tier-1 Taluk Supervisory:</span>
+<span class="font-bold text-on-surface">15 dockets</span>
+</div>
+<div class="flex justify-between items-center">
+<span>Tier-2 District Command (DC):</span>
+<span class="font-bold text-tertiary">9 dockets</span>
+</div>
+</div>
+</div>
+<div class="mt-2 pt-2 text-[11px] font-label-sm font-semibold text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">gavel</span>
+<span>3 Sec-14 statutory summons issued</span>
+</div>
+</div>
+<!-- Card 5: Reopened Complaints -->
+<div class="relative overflow-hidden p-5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="absolute top-0 left-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Post-Audit Reopened</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">ಮರುಪರಿಶೀಲಿಸಲಾದ ದೂರುಗಳು</span>
+</div>
+<div class="w-8 h-8 rounded-lg bg-error/10 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">published_with_changes</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">2.1<span class="text-title-lg font-title-lg font-normal text-on-surface-variant">%</span></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">Total 13 Cases</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Triggered via Spot-Audit verification or direct citizen dissatisfaction call.
+        </p>
+</div>
+<div class="mt-3 pt-2 text-[11px] font-label-sm text-on-surface-variant flex items-center justify-between">
+<span class="text-secondary font-semibold">97.9% 1st-Touch Quality</span>
+<span class="font-mono text-on-surface">Target: &lt;3.5%</span>
+</div>
+</div>
+</div>
+<!-- Primary Visual Analytics Section: 2 Large Analytical Panels -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 mb-6">
+<!-- Chart Panel 1: Resolution Time by Department (Multi-bar comparison) -->
+<div class="xl:col-span-7 p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-4 mb-2">
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+              Resolution Velocity by Department vs Statutory Limit
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Actual aggregate turnaround hours mapped against statutory SAKALA benchmark windows.
+            </p>
+</div>
+<div class="flex items-center gap-4 text-label-sm font-label-sm">
+<span class="inline-flex items-center gap-1.5 text-on-surface-variant">
+<span class="w-3 h-3 rounded bg-primary"></span> Actual Turnaround
+            </span>
+<span class="inline-flex items-center gap-1.5 text-on-surface-variant">
+<span class="w-3 h-0.5 bg-outline"></span> Statutory Ceiling
+            </span>
+</div>
+</div>
+<!-- Comparative Bars Data Viz -->
+<div class="mt-6 flex flex-col gap-5">
+<!-- Item 1: BWSSB -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-md font-label-md">
+<span class="font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+                BWSSB (Water Supply &amp; Sewerage Board)
+              </span>
+<div class="flex items-center gap-2">
+<span class="font-mono text-on-surface font-bold">42.0h</span>
+<span class="text-on-surface-variant">/ 48h SLA</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold">Under SLA (-6h)</span>
+</div>
+</div>
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<!-- Actual -->
+<div class="h-full bg-primary rounded-full" style="width: 58.3%;"></div>
+<!-- Benchmark marker at 66.6% (48h ceiling scaled to 72h) -->
+<div class="absolute top-0 bottom-0 w-0.5 bg-error" style="left: 66.6%;" title="Ceiling: 48h"></div>
+</div>
+</div>
+<!-- Item 2: BESCOM -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-md font-label-md">
+<span class="font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-amber-500">bolt</span>
+                BESCOM (Electricity Supply &amp; Distribution)
+              </span>
+<div class="flex items-center gap-2">
+<span class="font-mono text-on-surface font-bold">28.0h</span>
+<span class="text-on-surface-variant">/ 48h SLA</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold">Rapid (-20h)</span>
+</div>
+</div>
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 38.8%;"></div>
+<div class="absolute top-0 bottom-0 w-0.5 bg-error" style="left: 66.6%;"></div>
+</div>
+</div>
+<!-- Item 3: BBMP Infra & SWM (Overdue Breach Highlight) -->
+<div class="flex flex-col gap-1.5 p-2 rounded-xl bg-error-container/30">
+<div class="flex items-center justify-between text-label-md font-label-md">
+<span class="font-semibold text-error flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-error">traffic</span>
+                BBMP Infra &amp; Solid Waste Management
+              </span>
+<div class="flex items-center gap-2">
+<span class="font-mono text-error font-bold">54.0h</span>
+<span class="text-on-surface-variant">/ 48h SLA</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error text-[10px] font-bold animate-pulse">SLA Breached (+6h)</span>
+</div>
+</div>
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 75%;"></div>
+<div class="absolute top-0 bottom-0 w-0.5 bg-error-container" style="left: 66.6%;"></div>
+</div>
+</div>
+<!-- Item 4: Health & Family Welfare -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-md font-label-md">
+<span class="font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary">local_hospital</span>
+                Health &amp; Family Welfare (Primary Clinics)
+              </span>
+<div class="flex items-center gap-2">
+<span class="font-mono text-on-surface font-bold">9.2h</span>
+<span class="text-on-surface-variant">/ 12h SLA</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold">Optimal (-2.8h)</span>
+</div>
+</div>
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 12.7%;"></div>
+<div class="absolute top-0 bottom-0 w-0.5 bg-error" style="left: 16.6%;"></div>
+</div>
+</div>
+<!-- Item 5: Revenue Department (Bhoomi) -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-md font-label-md">
+<span class="font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">account_balance</span>
+                Revenue Department (Bhoomi Land Mutation)
+              </span>
+<div class="flex items-center gap-2">
+<span class="font-mono text-on-surface font-bold">6.4 Days</span>
+<span class="text-on-surface-variant">/ 15 Days SLA</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold">Efficient (-8.6d)</span>
+</div>
+</div>
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 42.6%;"></div>
+<div class="absolute top-0 bottom-0 w-0.5 bg-error" style="left: 100%;"></div>
+</div>
+</div>
+<!-- Item 6: PWD Public Works -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between text-label-md font-label-md">
+<span class="font-semibold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-slate-600">engineering</span>
+                Public Works Department (PWD Arterial Roadways)
+              </span>
+<div class="flex items-center gap-2">
+<span class="font-mono text-on-surface font-bold">44.0h</span>
+<span class="text-on-surface-variant">/ 72h SLA</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 text-[10px] font-bold">Compliant (-28h)</span>
+</div>
+</div>
+<div class="relative w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 61.1%;"></div>
+<div class="absolute top-0 bottom-0 w-0.5 bg-error" style="left: 100%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 flex flex-wrap items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Reference baseline: Karnataka Guarantee of Services Act gazette timeline table § 4(A).</span>
+<button class="text-primary hover:underline font-semibold flex items-center gap-1">
+          Detailed SLA Registry <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Chart Panel 2: Overdue Percentage & Breaches (Distribution breakdown) -->
+<div class="xl:col-span-5 p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+              Overdue Ratio by Department
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Proportion of active cases currently exceeding statutory threshold.
+            </p>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-sm text-label-sm font-mono text-on-surface-variant">41 Breaches</span>
+</div>
+<div class="mt-6 flex flex-col gap-4">
+<!-- Dept 1: BBMP -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">BBMP Infra &amp; SWM</span>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-error font-bold">11.2%</span>
+<span class="text-[11px] font-label-sm text-on-surface-variant font-mono">(19 cases)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 74%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-on-surface-variant">
+<span>Avg breach delay: +21.4 hours</span>
+<span class="text-error font-semibold">Supervisory Escalation Flag</span>
+</div>
+</div>
+<!-- Dept 2: Revenue Dept -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">Revenue Department</span>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-amber-600 font-bold">9.4%</span>
+<span class="text-[11px] font-label-sm text-on-surface-variant font-mono">(11 cases)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-amber-500 h-full rounded-full" style="width: 58%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-on-surface-variant">
+<span>Bhoomi land survey bottlenecks</span>
+<span class="text-amber-700 font-semibold">Monitoring</span>
+</div>
+</div>
+<!-- Dept 3: BWSSB -->
+<div class="p-3 rounded-xl bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-surface font-semibold">BWSSB Water Board</span>
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-on-surface font-bold">7.1%</span>
+<span class="text-[11px] font-label-sm text-on-surface-variant font-mono">(6 cases)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 44%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-on-surface-variant">
+<span>Main valve pipeline ruptures</span>
+<span class="text-secondary font-semibold">Controlled SLA</span>
+</div>
+</div>
+<!-- Dept 4: BESCOM, PWD & Health combined minimal bars -->
+<div class="grid grid-cols-3 gap-2 pt-1">
+<div class="p-2.5 rounded-lg bg-surface-container text-center">
+<div class="font-title-sm text-title-sm font-bold text-on-surface">4.2%</div>
+<div class="text-[11px] font-label-sm text-on-surface-variant font-semibold">BESCOM</div>
+<div class="text-[10px] text-secondary font-mono">3 dockets</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container text-center">
+<div class="font-title-sm text-title-sm font-bold text-on-surface">3.8%</div>
+<div class="text-[11px] font-label-sm text-on-surface-variant font-semibold">PWD</div>
+<div class="text-[10px] text-secondary font-mono">2 dockets</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container text-center">
+<div class="font-title-sm text-title-sm font-bold text-emerald-700">2.1%</div>
+<div class="text-[11px] font-label-sm text-on-surface-variant font-semibold">Health &amp; FW</div>
+<div class="text-[10px] text-secondary font-mono">0 breaches</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 p-3 rounded-xl bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-error">notifications_active</span>
+<span>Automatic Section 12 Show-Cause threshold triggers at &gt;10% Overdue.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Analytical Grid: Officer Workload & Jurisdictional SLA Heatmap -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-6 mb-6">
+<!-- Panel 3: Officer Workload Distribution & Case Capacity -->
+<div class="xl:col-span-5 p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+              Officer Workload Distribution &amp; Capacity
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Operational load balance across 142 nodal officers in Zone 04.
+            </p>
+</div>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+</div>
+<!-- Metric overview counters -->
+<div class="mt-4 p-4 rounded-xl bg-surface-container-low flex items-center justify-around">
+<div class="text-center">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">142</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Nodal Officers</div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest"></div>
+<div class="text-center">
+<div class="font-headline-sm text-headline-sm text-primary font-bold">9.8</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Avg Dockets/Off.</div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest"></div>
+<div class="text-center">
+<div class="font-headline-sm text-headline-sm text-error font-bold">18</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Over-Capacity</div>
+</div>
+</div>
+<!-- Workload capacity status buckets -->
+<div class="mt-5 flex flex-col gap-3.5">
+<div class="flex items-center justify-between text-label-md font-label-md mb-1">
+<span class="text-on-surface font-semibold">Workload Distribution Profile:</span>
+<span class="text-on-surface-variant font-mono">100% Caseload Allocation</span>
+</div>
+<!-- Stacked Capacity bar -->
+<div class="w-full h-4 rounded-full bg-surface-container-high overflow-hidden flex">
+<div class="bg-emerald-500 h-full" style="width: 62%;" title="Optimal Load (&lt;10 dockets): 62%"></div>
+<div class="bg-amber-500 h-full" style="width: 25%;" title="Nearing Saturation (10-15 dockets): 25%"></div>
+<div class="bg-error h-full" style="width: 13%;" title="Overloaded (&gt;15 dockets): 13%"></div>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant pt-1">
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Optimal (&lt;10): 88 Off.
+            </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span> Near Max (10-15): 36 Off.
+            </span>
+<span class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span> Overload (&gt;15): 18 Off.
+            </span>
+</div>
+<!-- Department caseload breakdown -->
+<div class="mt-4 flex flex-col gap-3">
+<div class="flex items-center justify-between text-body-sm font-body-sm p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="font-semibold text-on-surface">BBMP Field Engineers</span>
+<div class="flex items-center gap-3">
+<span class="font-mono text-error font-bold">14.2 dockets/officer</span>
+<span class="px-2 py-0.5 rounded bg-error/10 text-error font-label-sm text-label-sm font-bold">Overload</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="font-semibold text-on-surface">BWSSB Valve Inspectors</span>
+<div class="flex items-center gap-3">
+<span class="font-mono text-amber-600 font-bold">11.8 dockets/officer</span>
+<span class="px-2 py-0.5 rounded bg-amber-50 text-amber-700 font-label-sm text-label-sm font-bold">High</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm p-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors">
+<span class="font-semibold text-on-surface">BESCOM Linemen Supervisors</span>
+<div class="flex items-center gap-3">
+<span class="font-mono text-secondary font-bold">7.5 dockets/officer</span>
+<span class="px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 font-label-sm text-label-sm font-bold">Balanced</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-5 p-3.5 rounded-xl bg-primary-container text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">balance</span>
+<span class="font-body-sm text-body-sm font-medium">Automatic Case Rebalancing Dispatch Ready</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-primary font-title-sm text-title-sm hover:bg-surface-container-low transition-colors shadow-sm">
+          Run Load Equalizer
+        </button>
+</div>
+</div>
+<!-- Panel 4: Jurisdictional Grievance Density & SLA Breach Heatmap -->
+<div class="xl:col-span-7 p-6 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center justify-between gap-3 mb-3">
+<div>
+<h2 class="font-title-lg text-title-lg text-on-surface font-bold">
+              Jurisdictional Grievance Density &amp; SLA Breach Heatmap
+            </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Geographic concentration across 8 municipal sub-divisions in District Zone 04.
+            </p>
+</div>
+<!-- Filter switch chips -->
+<div class="flex items-center bg-surface-container p-1 rounded-xl">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-xs font-semibold">
+              Complaint Volume
+            </button>
+<button class="px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">
+              SLA Breaches
+            </button>
+<button class="px-2.5 py-1 rounded-lg text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">
+              Escalation Index
+            </button>
+</div>
+</div>
+<!-- Heatmap Grid of 8 Sub-divisions -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
+<!-- Cell 1: Ward 08 Vidyaranyapura (Critical Hotspot) -->
+<div class="p-3.5 rounded-xl bg-error-container/40 flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<span class="font-title-sm text-title-sm text-error font-bold leading-tight">Vidyaranyapura<br/><span class="text-[11px] font-normal text-on-surface-variant">Ward 08</span></span>
+<span class="material-symbols-outlined text-[16px] text-error animate-bounce">priority_high</span>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono text-title-lg text-title-lg font-bold text-error">94</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">78.2% SLA</span>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Avg Breach: +18.4h</div>
+</div>
+</div>
+<!-- Cell 2: Mahadevapura Tech Corridor (Elevated) -->
+<div class="p-3.5 rounded-xl bg-amber-50 flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<span class="font-title-sm text-title-sm text-amber-900 font-bold leading-tight">Mahadevapura<br/><span class="text-[11px] font-normal text-on-surface-variant">Sub-Division</span></span>
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono text-title-lg text-title-lg font-bold text-amber-900">82</span>
+<span class="font-label-sm text-label-sm text-amber-700 font-semibold">89.1% SLA</span>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Avg Breach: +6.2h</div>
+</div>
+</div>
+<!-- Cell 3: Yelahanka Taluk (Moderate) -->
+<div class="p-3.5 rounded-xl bg-surface-container flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<span class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">Yelahanka<br/><span class="text-[11px] font-normal text-on-surface-variant">Taluk Hq</span></span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono text-title-lg text-title-lg font-bold text-on-surface">57</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">94.5% SLA</span>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Avg Breach: +1.1h</div>
+</div>
+</div>
+<!-- Cell 4: Peenya Industrial (Moderate) -->
+<div class="p-3.5 rounded-xl bg-surface-container flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<span class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">Peenya<br/><span class="text-[11px] font-normal text-on-surface-variant">Industrial Zone</span></span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono text-title-lg text-title-lg font-bold text-on-surface">49</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">95.0% SLA</span>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Avg Breach: +0.8h</div>
+</div>
+</div>
+<!-- Cell 5: Kengeri Satellite (Low Volume) -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<span class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">Kengeri<br/><span class="text-[11px] font-normal text-on-surface-variant">Satellite Sub-Div</span></span>
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono text-title-lg text-title-lg font-bold text-on-surface">36</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-semibold">97.2% SLA</span>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Within Statutory SLA</div>
+</div>
+</div>
+<!-- Cell 6: Sarjapura Hub (Elevated) -->
+<div class="p-3.5 rounded-xl bg-amber-50 flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<span class="font-title-sm text-title-sm text-amber-900 font-bold leading-tight">Sarjapura<br/><span class="text-[11px] font-normal text-on-surface-variant">Growth Cluster</span></span>
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono text-title-lg text-title-lg font-bold text-amber-900">73</span>
+<span class="font-label-sm text-label-sm text-amber-700 font-semibold">88.4% SLA</span>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Avg Breach: +7.8h</div>
+</div>
+</div>
+<!-- Cell 7: Nelamangala Rural (Low Volume) -->
+<div class="p-3.5 rounded-xl bg-surface-container-low flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<span class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">Nelamangala<br/><span class="text-[11px] font-normal text-on-surface-variant">Rural Taluk</span></span>
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono text-title-lg text-title-lg font-bold text-on-surface">22</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-semibold">98.1% SLA</span>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Zero Pending Breaches</div>
+</div>
+</div>
+<!-- Cell 8: Kasaba Hobli (Moderate) -->
+<div class="p-3.5 rounded-xl bg-surface-container flex flex-col justify-between relative overflow-hidden group hover:scale-[1.02] transition-transform cursor-pointer">
+<div class="flex justify-between items-start mb-2">
+<span class="font-title-sm text-title-sm text-on-surface font-bold leading-tight">Kasaba Hobli<br/><span class="text-[11px] font-normal text-on-surface-variant">Central Revenue</span></span>
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="flex items-baseline justify-between mb-1">
+<span class="font-mono text-title-lg text-title-lg font-bold text-on-surface">44</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">93.8% SLA</span>
+</div>
+<div class="text-[10px] font-label-sm text-on-surface-variant">Avg Breach: +2.0h</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Heatmap intensity legend -->
+<div class="mt-4 pt-3 flex flex-wrap items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="font-medium text-on-surface">Breach Density Scale:</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-surface-container-low"></span> Low</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-surface-container"></span> Moderate</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-amber-100"></span> Elevated</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded bg-error-container"></span> Critical Hotspot</span>
+</div>
+<span class="text-[11px] font-mono">Geo-tagging: Karnataka GIS Telemetry</span>
+</div>
+</div>
+</div>
+<!-- Supervisory Insights Strip & Direct Enforcement Actions -->
+<div class="p-5 rounded-2xl bg-surface-container-lowest shadow-sm flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">
+          Automated Supervisory Directives &amp; Operational Alerts
+        </h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-3 py-1 rounded-full">
+        SAKALA Section 8 Algorithmic Audit
+      </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Actionable Alert 1: Resource Rebalance -->
+<div class="p-4 rounded-xl bg-error-container/20 flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-lg bg-error text-on-error flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">group_add</span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-error-container font-bold">Automated Rebalancing Alert • Ward 08 Vidyaranyapura</span>
+<span class="px-2 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-semibold">Priority 1</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Ward 08 Vidyaranyapura currently reports <span class="font-semibold text-on-surface">16 active road pothole dockets</span> with only 2 assigned junior engineers. Recommend temporary cross-deployment of 2 reserve engineers from Yelahanka Sub-Division.
+          </p>
+<div class="mt-2 flex items-center gap-2">
+<button class="px-3 py-1 rounded-lg bg-error text-on-error font-label-sm text-label-sm font-semibold hover:bg-error/90 transition-colors">
+              Dispatch Cross-Deployment Order
+            </button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+              Inspect Ward Queue
+            </button>
+</div>
+</div>
+</div>
+<!-- Actionable Alert 2: Commendation -->
+<div class="p-4 rounded-xl bg-secondary/10 flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-lg bg-secondary text-on-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">workspace_premium</span>
+</div>
+<div class="flex flex-col gap-1 flex-1">
+<div class="flex items-center justify-between">
+<span class="font-title-sm text-title-sm text-on-secondary-container font-bold">Department Commendation • Health &amp; Family Welfare</span>
+<span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold">Exemplary</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Primary Health Services achieved <span class="font-semibold text-on-surface">97.9% statutory resolution</span> for vaccine stockouts and immunization requests for 3 consecutive rolling weeks without a single Section-14 citation.
+          </p>
+<div class="mt-2 flex items-center gap-2">
+<button class="px-3 py-1 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold hover:bg-secondary/90 transition-colors">
+              Issue Official Citation (IAS E-Sign)
+            </button>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-surface-container transition-colors">
+              View Department Ledger
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Official Seal & Synchronized Audit Footer -->
+<div class="mt-2 pt-3 flex flex-wrap items-center justify-between gap-4 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+<span>Authenticated by SAKALA Mission Director &amp; District Deputy Commissioner (DC) Secretarial Console</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-mono text-on-surface-variant">Digital Seal: KA-SAKALA-2025-Z04-VERIFIED</span>
+<button class="text-primary font-semibold hover:underline flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print Gazette Roll</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>
